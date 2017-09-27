@@ -9,11 +9,15 @@ public class Main {
         Scanner in = new Scanner(System.in);
         int a = in.nextInt();
         int b = in.nextInt();
-        int i = a;
-        while (i <= b) {
-                System.out.print(i + " ");
-                i++;
-        }
+//        int i = a;
+//        while (i <= b) {
+//                System.out.print(i + " ");
+//                i++;
+//        }
 
+        
+        for (int i = a; i < b; i++){
+            System.out.print(i + " ");
+        }
     }
 }
