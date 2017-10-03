@@ -1,8 +1,12 @@
+//Задание 11(б), стр 23
+
 package ru.itis;
+
 import java.util.Scanner;
 
 public class Task11B {
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         double sum = 0;

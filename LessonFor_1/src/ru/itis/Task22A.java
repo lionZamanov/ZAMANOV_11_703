@@ -1,9 +1,12 @@
+//Задание 10(а), стр 22
+
 package ru.itis;
 
 import java.util.Scanner;
 
 public class Task22A {
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int k;
@@ -16,9 +19,8 @@ public class Task22A {
             sum = sum + p*an/(fact*(2*k + 1));
             p = -p;
             fact *= (k+1);
-            an *=x*x;
+            an *= x*x;
         }
-
         System.out.println(sum);
     }
 

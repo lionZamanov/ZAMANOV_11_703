@@ -1,12 +1,17 @@
+//Задание 10(г), стр 22
+
 package ru.itis;
+
 import java.util.Scanner;
+
 public class Task22D {
     public static void main(String[] args){
+
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int k;
         double sum = 0;
-        double x = in.nextInt();
+        double x = in.nextDouble();
         double an = x;
         int fact;
         int fact1 = 1;

@@ -1,12 +1,17 @@
+//Задание 10(б), стр 22
+
 package ru.itis;
+
 import java.util.Scanner;
+
 public class Task22B {
     public static void main(String[] args){
+
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int k;
         double sum = 0;
-        double x = in.nextInt();
+        double x = in.nextDouble();
         double an = x;
         int fact = 1;
         int p = 1;
@@ -14,7 +19,7 @@ public class Task22B {
             if(k != 0) fact *= k*2*(2*k - 1);
             sum += p*an/(fact*(4*k + 1));
             p = -p;
-            an *=x*x*x*x;
+            an *= x*x*x*x;
         }
         System.out.println(sum);
     }
