@@ -9,17 +9,15 @@ public class Task22A {
 
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        int k;
-        double sum = 0;
         double x = in.nextDouble();
-        double an = x;
-        int fact = 1;
-        int p = 1;
-        for(k = 0; k <= n; k++){
-            sum = sum + p*an/(fact*(2*k + 1));
+        int k;
+        double sum = x;
+        double prev = x;
+        int p = -1;
+        for(k = 1; k <= n; k++){
+            prev *= (2*(k-1)+1)*x*x*p/((2*k+1)*k);
+            sum += prev;
             p = -p;
-            fact *= (k+1);
-            an *= x*x;
         }
         System.out.println(sum);
     }

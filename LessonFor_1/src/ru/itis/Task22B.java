@@ -8,18 +8,18 @@ public class Task22B {
     public static void main(String[] args){
 
         Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        int k;
-        double sum = 0;
-        double x = in.nextDouble();
-        double an = x;
-        int fact = 1;
-        int p = 1;
-        for(k = 0; k <= n; k++){
-            if(k != 0) fact *= k*2*(2*k - 1);
-            sum += p*an/(fact*(4*k + 1));
-            p = -p;
-            an *= x*x*x*x;
+        int
+                n = in.nextInt(),
+                p = -1,
+                k;
+        double
+                x = in.nextDouble(),
+                sum = x,
+                prev = x;
+
+        for(k = 1; k <= n; k++){
+            prev *= p*x*x*x*x*(4*(k-1)+1)/(2*k*(2*k-1)*(4*k+1));
+            sum += prev;
         }
         System.out.println(sum);
     }
