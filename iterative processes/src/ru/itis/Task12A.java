@@ -11,7 +11,7 @@ public class Task12A {
         double prev = 1;
         int x = in.nextInt();
         while(Math.abs(prev) > e) {
-            prev *=(double)x/i;
+            prev *=(double)x/i;  // логика нарушена
             s += prev;
             i++;
         }
