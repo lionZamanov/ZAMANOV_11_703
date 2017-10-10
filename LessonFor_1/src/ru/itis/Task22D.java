@@ -20,6 +20,6 @@ public class Task22D {
         for(k = 2; k <= 2*n; k++){
             prev *= x;
         }
-        System.out.println(sum);
+        System.out.println(sum);  // А факториалы?
     }
 }
