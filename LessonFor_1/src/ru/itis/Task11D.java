@@ -12,7 +12,7 @@ public class Task11D {
         double p = 1;
         double prev = 1;
         for (int k = 1; k <= n; k++) {
-            prev *= Math.tan(k);
+            prev *= Math.tan(k);   // нет там тангенсов
             p *= prev;
         }
         System.out.println(p);
