@@ -31,6 +31,6 @@ public class Task22D {
             }
             sum += prev;
         }
-        System.out.println(sum);
+        System.out.println(sum);  // А факториалы?
     }
 }
