@@ -10,8 +10,9 @@ public class Task32B {
         double
                 e = 0.0001,
                 x1,
-                a = 5,
+                a = in.nextDouble(),
                 x0 = a;
+
         x1 = 1 + 9 * Math.sin(x0)/2;
         while (Math.abs(x0 - x1) > e){
             x0 = x1;
