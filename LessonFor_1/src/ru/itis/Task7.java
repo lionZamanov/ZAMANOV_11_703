@@ -8,7 +8,7 @@ public class Task7 {
         int i = 2;
 
         while(Math.abs(R - pi/2) > e){
-            R *= 4*i*(double)i/3 ;
+            R *= 4*i*(double)i/(4*i*i - 1);
             i++;
         }
         System.out.println(i);

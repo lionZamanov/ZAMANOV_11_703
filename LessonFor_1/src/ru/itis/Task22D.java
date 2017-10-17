@@ -15,10 +15,21 @@ public class Task22D {
         double
                 x = in.nextDouble(),
                 sum = x,
-                prev = x;
+                prev,
+                prev1 = x,
+                prev2 = x;
 
         for(k = 2; k <= 2*n; k++){
-            prev *= x;
+            prev1 *= x;
+            prev2 *= x;
+            if(k % 2 == 0){
+                prev2 /= k;
+                prev = prev2;
+            } else {
+                prev1 /= k;
+                prev = prev1;
+            }
+            sum += prev;
         }
         System.out.println(sum);
     }

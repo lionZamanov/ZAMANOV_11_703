@@ -1,23 +1,23 @@
 package ru.itis;
 import java.util.Scanner;
 
-
-public class Task12B {
+public class Task12C {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         int
-                i = 0,
-                p = 1;
+                n = 2,
+                p = -1;
         double
                 x = in.nextDouble(),
                 t = x,
-                s = t,
-                e = 0.0001;
-        while(Math.abs(t) > e) {
-            i++;
-            p = -p;
-            t = x*x/((2*i+1)*2*i);
+                s = x,
+                e = 0.00001;
+
+        while(Math.abs(t) > e){
+            t *= x*(n-1)/n;
             s += p*t;
+            p = -p;
+            n++;
         }
         System.out.println(s);
     }

@@ -9,9 +9,9 @@ public class Task12A {
         double s = 1;
         int i = 1;
         double prev = 1;
-        int x = in.nextInt();
+        double x = in.nextDouble();
         while(Math.abs(prev) > e) {
-            prev *=(double)x/i;
+            prev *=x/i;
             s += prev;
             i++;
         }
