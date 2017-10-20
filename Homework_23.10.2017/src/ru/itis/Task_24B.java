@@ -1,3 +1,4 @@
+// Черновик
 package ru.itis;
 
 import java.util.Scanner;
@@ -18,20 +19,28 @@ public class Task_24B {
                 c1 = Math.sin(x),
                 c2;
         int
-                n = 2;
+                n = 3;
 
-        b2 = b1*b1 - c1*c1;
+        b2 = b1*b1 - c1*c1; //Находим для cos2x
         c2 = c1*b1 + c1*b1;
+        b0 = b2;
+        c0 = c2;
+        b2 = b1*b0 - c1*c0; //Находим для cos3x
+        c2 = c0*b1 + c1*b0;
         t = b2;
-        s = t;
+        s = b1 + t/2; // Суммируем
         while(Math.abs(t) >= e){
 
             b0 = b2;
             c0 = c2;
-            b2 = b1*b0 - c1*c0;
+            b2 = b1*b0 - c1*c0;//Находим для cos(n+1)x
             c2 = c0*b1 + c1*b0;
-            t = p*b2/n;
-            s += t;
+            b0 = b2;
+            c0 = c2;
+            b2 = b1*b0 - c1*c0;//Находим для cos(n+2)x
+            c2 = c0*b1 + c1*b0;
+            t = b2/n;
+            s += p*t;
             n++;
         }
         System.out.println(s);

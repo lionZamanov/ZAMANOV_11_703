@@ -1,7 +1,7 @@
 package ru.itis;
 import java.util.Scanner;
 
-public class Task_23B{
+public class Task_23A{
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         double
@@ -11,20 +11,15 @@ public class Task_23B{
                 x = in.nextDouble(),
                 v0 = a,
                 v1 = a,
-                p = 1,
-                t = 4.0,
                 v2;
 
         v2 = v0 + v1;
-        s = v0*Math.cos(v0*x)*Math.cos(v0*x) - v1*Math.cos(v1*x)*Math.cos(v1*x)/2;
+        s = Math.log(v0*x) + Math.log(v1*x) + Math.log(v2*x);
         while(v2 <= b){
-            s += p*v2 * Math.cos(v2*x) * Math.cos(v2*x)/t;
             v0 = v1;
             v1 = v2;
             v2 = v1 + v0;
-            t /= 2;
-            p = -p;
-
+            s += Math.log(v2*x);
         }
         System.out.println(s);
     }
