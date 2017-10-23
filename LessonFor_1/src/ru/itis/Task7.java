@@ -1,4 +1,4 @@
-package ru.itis;
+package ru.itis;//+
 
 public class Task7 {
     public static void main(String[] args){
