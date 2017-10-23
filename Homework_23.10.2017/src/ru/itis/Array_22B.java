@@ -1,4 +1,4 @@
-package ru.itis;
+package ru.itis;//+
 
 import java.util.Arrays;
 import java.util.Random;
