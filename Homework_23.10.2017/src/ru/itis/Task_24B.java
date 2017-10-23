@@ -1,5 +1,5 @@
 // Черновик
-package ru.itis;
+package ru.itis;//-
 
 import java.util.Scanner;
 
@@ -39,7 +39,7 @@ public class Task_24B {
             c0 = c2;
             b2 = b1*b0 - c1*c0;//Находим для cos(n+2)x
             c2 = c0*b1 + c1*b0;
-            t = b2/n;
+            t = b2/n;  //неверная логика
             s += p*t;
             n++;
         }
