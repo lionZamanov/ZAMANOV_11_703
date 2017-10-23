@@ -1,4 +1,4 @@
-package ru.itis;
+package ru.itis;//что за задача?
 import java.util.Scanner;
 public class Tasks {
     public static void main(String[] args) {
