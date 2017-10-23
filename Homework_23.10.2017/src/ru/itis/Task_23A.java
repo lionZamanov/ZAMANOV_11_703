@@ -1,4 +1,4 @@
-package ru.itis;
+package ru.itis;//-
 import java.util.Scanner;
 
 public class Task_23A{
@@ -18,7 +18,7 @@ public class Task_23A{
         while(v2 <= b){
             v0 = v1;
             v1 = v2;
-            v2 = v1 + v0;
+            v2 = v1 + v0;  //неверная логика
             s += Math.log(v2*x);
         }
         System.out.println(s);
