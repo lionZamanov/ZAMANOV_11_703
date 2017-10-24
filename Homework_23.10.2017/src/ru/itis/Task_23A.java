@@ -14,12 +14,12 @@ public class Task_23A{
                 v2;
 
         v2 = v0 + v1;
-        s = Math.log(v0*x) + Math.log(v1*x) + Math.log(v2*x);
+        s = Math.log(v0*x) + Math.log(v1*x)
         while(v2 <= b){
+            s += Math.log(v2*x);
             v0 = v1;
             v1 = v2;
             v2 = v1 + v0;  //неверная логика
-            s += Math.log(v2*x);
         }
         System.out.println(s);
     }
