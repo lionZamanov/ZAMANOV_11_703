@@ -1,6 +1,6 @@
 package ru.itis;
 
-public class Main {
+public class Main {  //что за задача?
 
     public static void main(String[] args) {
         int n = 10;
