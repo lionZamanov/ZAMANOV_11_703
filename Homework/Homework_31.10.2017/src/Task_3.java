@@ -1,5 +1,5 @@
 //Найти произведение не равных 0 эл стоящих за макс.эл.
-import java.util.*;
+import java.util.*;  //-
 
 public class Task_3 {
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class Task_3 {
                 max = a[i];
                 p = 1;
             }else if(a[i] != 0){
-                p *= a[i];
+                p *= a[i];  //вы же еще не нашли максимальный
             }
         }
 
