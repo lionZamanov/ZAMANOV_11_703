@@ -1,5 +1,5 @@
 // Сортировка массива методом локальных экстремумов
-import java.util.*;
+import java.util.*;//+
 public class Array_8 {
     public static void main(String[] args) {
         Random r = new Random();
@@ -24,7 +24,7 @@ public class Array_8 {
             for (int j = 0; j < S.length; j++) {
                 if(T[i] == S[j]){
                     T1[i] = 1;
-                    break;
+                    break;  //не надо строить вектора, они даны!
                 }
             }
         }
