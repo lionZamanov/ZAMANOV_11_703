@@ -1,5 +1,5 @@
 // Сортировка массива методом локальных экстремумов
-import java.util.*;
+import java.util.*;//-
 public class Local_extremes_max {
     public static void main(String[] args) {
         Random r = new Random();
@@ -14,7 +14,7 @@ public class Local_extremes_max {
         System.out.println();
         for (int i = n - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
-                if(a[j] > a[i]){
+                if(a[j] > a[i]){   //тоже вариант "пузырька"
                     t = a[j];
                     a[j] = a[i];
                     a[i] = t;
