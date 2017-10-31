@@ -1,6 +1,6 @@
 // Сортировка массива методом локальных экстремумов
 
-import java.util.Random;
+import java.util.Random;//-
 
 public class Local_extremes_min {
     public static void main(String[] args) {
@@ -16,11 +16,11 @@ public class Local_extremes_min {
         System.out.println();
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
-                if(a[j] < a[i]){
+                if(a[j] < a[i]){   
                     t = a[j];
                     a[j] = a[i];
                     a[i] = t;
-                }
+                }                   // это вариант "пузырьковой" сортироваки
             }
         }
         for(int i = 0; i < n; i++){
