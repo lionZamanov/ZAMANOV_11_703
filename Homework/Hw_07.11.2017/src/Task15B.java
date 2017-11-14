@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.*;//-
 public class Task15B {
     public static void main(String[] args) {
         int[] X = {1,2,5,4,5,7,7,12,12,12};
@@ -7,8 +7,8 @@ public class Task15B {
                 j = 0;
         boolean flag = false;
 
-        while(X[j] < X[j+1]) {
-            j++;
+        while(X[j] < X[j+1]) {  //если последовательностьвозрастающая, то получите исключение - выход за границы массива
+            j++;                // а что вообще делет этот фрагмент?
         }
         j++;
         for (int i = j; i < X.length-1 ; i++) {
@@ -20,7 +20,7 @@ public class Task15B {
                 count = 0;
             }
         }
-        if(X[X.length-2]<X[X.length-1]){
+        if(X[X.length-2]<X[X.length-1]){//почему строгое неравнство?
             count++;
             u[count]++;
         }
