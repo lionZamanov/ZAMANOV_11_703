@@ -1,4 +1,4 @@
-import java.util.Random;
+import java.util.Random;//-
 
 public class Array_82 {
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class Array_82 {
         System.out.println();
 
         for (int i = 0; i < m && f; i++) {
-            if(T1[i] != T2[i]) f = false;
+            if(T1[i] != T2[i]) f = false;   //почему неравенство?
         }
 
         if(f) System.out.println("Y"); else System.out.println("N");
