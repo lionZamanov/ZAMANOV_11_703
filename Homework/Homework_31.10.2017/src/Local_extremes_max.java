@@ -28,4 +28,4 @@ public class Local_extremes_max {
             System.out.print(a[i] + " ");
         }
     }
-}
+}  //Какую-то ерунду считает
