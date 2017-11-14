@@ -43,5 +43,5 @@ public class MagicSquare {
         }
         System.out.println(flagColumn && flagLine && diagonal1 == sum && diagonal2 == sum);
     }
-
+          //присутствует некоторая избыточность.
 }
