@@ -1,4 +1,4 @@
-import java.util.Random;
+import java.util.Random;//+-
 
 public class Zeros {
 
@@ -19,7 +19,7 @@ public class Zeros {
             for (int k = 0; k < c; k++) {
                 a[i][k] = 0;
             }
-            c++;
+            c++;            //что делает с?
         }
         System.out.println();
         showMatrix(a);
