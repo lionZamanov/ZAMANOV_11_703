@@ -15,11 +15,10 @@ public class Zeros {
             }
         }
         showMatrix(a);
-        for (int i = 0; i < a.length; i++) {
-            for (int k = 0; k < c; k++) {
+        for (int i = 1; i < a.length; i++) {
+            for (int k = 0; k < i; k++) {
                 a[i][k] = 0;
             }
-            c++;            //что делает с?
         }
         System.out.println();
         showMatrix(a);
