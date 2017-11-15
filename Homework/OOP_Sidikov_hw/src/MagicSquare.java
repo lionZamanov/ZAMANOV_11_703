@@ -34,7 +34,7 @@ public class MagicSquare {
             diagonal1 += a[i][i];
             diagonal2 += a[i][a[i].length - i - 1];
         }
-        for (int i = 0; i < a.length && flagColumn; i++) {
+        for (int i = 0; i < a.length && flagColumn && flagLine; i++) {
             for (int k = 0; k < a[i].length; k++) {
                 s += a[k][i];
             }
