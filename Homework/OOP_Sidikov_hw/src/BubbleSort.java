@@ -8,6 +8,8 @@ public class BubbleSort {
         int
                 n = r.nextInt(7),
                 c;
+        boolean
+            flag = false;
         int[][] a = new int[r.nextInt(9)][r.nextInt(9)];
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
@@ -17,11 +19,12 @@ public class BubbleSort {
         showMatrix(a);
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
-                for (int k = 0; k < a[i].length - 1; k++) {
+                for (int k = 0; k < a[i].length - 1 && !flag; k++) {
                     if (a[i][k] > a[i][k + 1]) {
                         c = a[i][k];
                         a[i][k] = a[i][k + 1];
                         a[i][k + 1] = c;
+                        flag = false;
                     }
                 }
             }

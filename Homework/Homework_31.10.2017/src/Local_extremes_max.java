@@ -1,31 +1,36 @@
-// Сортировка массива методом локальных экстремумов
-import java.util.*;//-
+// Сортировка методом локальных максимумов
 public class Local_extremes_max {
     public static void main(String[] args) {
-        Random r = new Random();
-        int n = 10,
-                max,
-                t = 0;
-        int[] a = new int[n];
 
-        for(int i = 0; i < n; i++){
-            a[i] = r.nextInt(40);
+        int[] a = {3, 7, 4, 1, 6, 8, 0};
+        int max;
+        int max_i;
+
+        for (int i = 0; i < a.length; i++) {
             System.out.print(a[i] + " ");
         }
-        max = a[0];
         System.out.println();
-        for (int i = n - 1; i > 0; i--) {
-            for (int j = 0; j < i; j++) {
-                if(a[j] > max){   //тоже вариант "пузырька"
+
+        for (int i = a.length - 1; i >= 0; i--) {
+            max = a[i];
+            max_i = i;
+
+            for (int j = i - 1; j >= 0; j--) {
+                if (a[j] >= max) {
                     max = a[j];
+                    max_i = j;
                 }
             }
-            t = a[i];
-            a[i] = max;
-            max = t;
+            if (i != max_i) {
+                int s = a[i];
+                a[i] = a[max_i];
+                a[max_i] = s;
+            }
+
         }
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < a.length; i++) {
             System.out.print(a[i] + " ");
         }
+        System.out.println();
     }
-}  //Какую-то ерунду считает
+}

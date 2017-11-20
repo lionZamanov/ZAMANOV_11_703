@@ -5,7 +5,7 @@ public class Array_82 {
         Random r = new Random();
         int m = 10,
                 k = 0;
-        int[] S = new int[m],
+        int[]
                 T1 = new int[m],
                 T2 = new int[m];
         boolean
@@ -24,7 +24,7 @@ public class Array_82 {
         System.out.println();
 
         for (int i = 0; i < m && f; i++) {
-            if(T1[i] != T2[i]) f = false;   //почему неравенство?
+            if(T1[i] == 1 && T2[i] == 0) f = false;   //почему неравенство?
         }
 
         if(f) System.out.println("Y"); else System.out.println("N");

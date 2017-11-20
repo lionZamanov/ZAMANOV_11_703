@@ -8,9 +8,9 @@ public class Task13d {
         boolean f = false;
         double
             a0 = in.nextDouble(),
-                b0 = in.nextDouble(),
-                t = 0,
-                e = in.nextDouble();
+            b0 = in.nextDouble(),
+            t = 0,
+            e = in.nextDouble();
         int
             n = in.nextInt();
         double[]
