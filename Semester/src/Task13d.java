@@ -7,15 +7,15 @@ public class Task13d {
         Scanner in = new Scanner(System.in);
         boolean f = false;
         double
-            a0 = in.nextDouble(),
-            b0 = in.nextDouble(),
-            t = 0,
-            e = in.nextDouble();
+            a0 = -0.5,
+            b0 = 2.72,
+            t,
+            e = 0.5;
         int
-            n = in.nextInt();
+            n = 20;
         double[]
             a = new double[n],
-                b = new double[n];
+            b = new double[n];
         a[0] = a0;
         b[0] = b0;
         for (int i = 1; i < n; i++) {
