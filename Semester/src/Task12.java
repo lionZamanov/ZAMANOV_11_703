@@ -38,7 +38,7 @@ public class Task12 {
             flag = false;
             System.out.print(z1 + " ");
         }
-        for (int i = 0; i < m; i++) {
+        for (int i = 1; i < m; i++) {
             System.out.println(fi[i]);
         }
     }
