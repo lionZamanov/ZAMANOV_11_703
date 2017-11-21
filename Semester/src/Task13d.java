@@ -25,13 +25,13 @@ public class Task13d {
         System.out.println(Arrays.toString(a));
         System.out.println(Arrays.toString(b));
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+            for (int j = 0; j < n && !f; j++) {
                 if(f(a[i],b[j]) < e){
                     f = true;
                 }
             }
             if(f){
-                System.out.println(a[i]);
+                System.out.print(a[i] + " ");
             }
             f = false;
         }

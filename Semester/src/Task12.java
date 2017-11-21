@@ -15,21 +15,27 @@ public class Task12 {
             n = 42,
             m = 8;
         int[] fi = new int[m];
-        double[] z = new double[n];
+        boolean flag = false;
+        /*
         z[0] = z0;
         z[1] = z1;
         for (int i = 2; i < n; i++) {
             z[i] = F(z[i - 1],z[i - 2]);
         }
         System.out.println(Arrays.toString(z));
+        */
         znew = F(z1,z0);
         for (int i = 0; i < n; i++) {
             z0 = z1;
             z1 = znew;
             znew = F(z1,z0);
-            for (int j = 1; j < m; j++) {
-                if((j - 1)*h <= z1 && z1 < j*h) fi[j]++;
+            for (int j = 1; j < m && !flag; j++) {
+                if((j - 1)*h <= z1 && z1 < j*h) {
+                    fi[j]++;
+                    flag = true;
+                }
             }
+            flag = false;
             System.out.print(z1 + " ");
         }
         for (int i = 0; i < m; i++) {
