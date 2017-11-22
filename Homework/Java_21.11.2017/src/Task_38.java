@@ -7,25 +7,28 @@ public class Task_38 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Random r = new Random();
-        int n = 5,
+        int n = 3,
+                a,
+                b,
                 c;
         int[][] matrix = new int[n][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                matrix[i][j] = r.nextInt(10)+1;
+                matrix[i][j] = r.nextInt(5)+1;
             }
         }
         showMatrix(matrix);
-        System.out.println();
         for (int i = 0; i < n - 1; i++) {
             for (int j = i + 1; j < n; j++) {
-                c = matrix[i][i]*matrix[j][i] > 0 ? -1:1;
+                a = matrix[i][i];
+                b = matrix[j][i];
+               // c = a*b > 0 ? -1:1;
                 for (int k = i; k < n; k++) {
-                    matrix[j][k] = matrix[j][k]*matrix[i][i] + c*matrix[i][k]*matrix[j][i];
+                    matrix[j][k] = matrix[j][k]*a - matrix[i][k]*b;
                 }
             }
+            showMatrix(matrix);
         }
-        showMatrix(matrix);
     }
     public static int NOK(int x, int y){
         int a = Math.abs(x);
@@ -46,5 +49,6 @@ public class Task_38 {
             }
             System.out.println();
         }
+        System.out.println();
     }
 }
