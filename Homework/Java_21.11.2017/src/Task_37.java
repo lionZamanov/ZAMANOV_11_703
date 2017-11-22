@@ -14,7 +14,7 @@ public class Task_37 {
                 matrix[i][j] = r.nextInt(50)+1;
             }
         }
-        showMatrix(matrix, n);
+        showMatrix(matrix);
         System.out.println();
         for (int i = 0; i < n/2; i++) {
             for (int j = i+1; j < n-i-1; j++) {
@@ -26,11 +26,11 @@ public class Task_37 {
                 matrix[i][j] = 0;
             }
         }
-        showMatrix(matrix, n);
+        showMatrix(matrix);
     }
-    public static void showMatrix(int[][] matrix, int n){
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+    public static void showMatrix(int[][] matrix){
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
                 System.out.print(matrix[i][j] + " ");
             }
             System.out.println();

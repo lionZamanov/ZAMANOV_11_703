@@ -30,7 +30,7 @@ public class Task12 {
             z1 = znew;
             znew = F(z1,z0);
             for (int j = 1; j < m && !flag; j++) {
-                if((j - 1)*h <= z1 && z1 < j*h) {
+                if((j - 1)*h <= z0 && z0 < j*h) {
                     fi[j]++;
                     flag = true;
                 }
@@ -38,7 +38,7 @@ public class Task12 {
             flag = false;
             System.out.print(z1 + " ");
         }
-        for (int i = 0; i < m; i++) {
+        for (int i = 1; i < m; i++) {
             System.out.println(fi[i]);
         }
     }

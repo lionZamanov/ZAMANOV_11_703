@@ -1,43 +1,52 @@
+/*
 import java.util.Random;
 import java.util.Scanner;
 
 
-public class Task_38 {
+public class Task_39 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Random r = new Random();
         int n = 5,
                 c;
-        int[][] matrix = new int[n][n];
-        for (int i = 0; i < n; i++) {
+        int[][] matrix = {
+                {2,3,4,3,4},
+                {1,5,2,3,2},
+                {3,4,5,0,7}
+        };
+
+        boolean flag = true;
+        int[] array = {234,12,3450,17};
+        */
+/*for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 matrix[i][j] = r.nextInt(10)+1;
+            }
+        }*//*
+
+        for (int i = 0; i <= matrix.length - length(array[i]); i++) {
+            for (int j = 0; j <= matrix[i].length - length(array[i]) && flag; j++) {
+                    if(matrix[i][j] == f(array[i],i)){
+
+                    }
             }
         }
         showMatrix(matrix);
         System.out.println();
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = i + 1; j < n; j++) {
-                c = matrix[i][i]*matrix[j][i] > 0 ? -1:1;
-                for (int k = i; k < n; k++) {
-                    matrix[j][k] = matrix[j][k]*matrix[i][i] + c*matrix[i][k]*matrix[j][i];
-                }
-            }
-        }
+
         showMatrix(matrix);
     }
-    public static int NOK(int x, int y){
-        int a = Math.abs(x);
-        int b = Math.abs(y);
-        while (a != b) {
-            if(a > b) {
-                a -=b;
-            }else{
-                b -= a;
-            }
+    public static int f(int a, int i){
+
+    }
+    public static int length(int a){
+        int c = 0;
+        while(a > 0){
+            a /= 10;
+            c++;
         }
-        return x*y/b;
+        return c;
     }
     public static void showMatrix(int[][] matrix){
         for (int i = 0; i < matrix.length; i++) {
@@ -48,3 +57,4 @@ public class Task_38 {
         }
     }
 }
+*/
