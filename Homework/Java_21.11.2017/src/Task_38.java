@@ -7,28 +7,31 @@ public class Task_38 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Random r = new Random();
-        int n = 3,
-                a,
-                b,
-                c;
+        int n = 2;
+
         int[][] matrix = new int[n][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                matrix[i][j] = r.nextInt(5)+1;
+                matrix[i][j] = in.nextInt();
             }
         }
         showMatrix(matrix);
+        showMatrix(Gauss(matrix, n));
+    }
+
+    public static int[][] Gauss(int[][] matrix,int n){
+        int a;
+        int b;
         for (int i = 0; i < n - 1; i++) {
             for (int j = i + 1; j < n; j++) {
                 a = matrix[i][i];
                 b = matrix[j][i];
-               // c = a*b > 0 ? -1:1;
                 for (int k = i; k < n; k++) {
                     matrix[j][k] = matrix[j][k]*a - matrix[i][k]*b;
                 }
             }
-            showMatrix(matrix);
         }
+        return matrix;
     }
     public static int NOK(int x, int y){
         int a = Math.abs(x);
