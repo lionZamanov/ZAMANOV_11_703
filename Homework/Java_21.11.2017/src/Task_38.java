@@ -7,7 +7,7 @@ public class Task_38 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Random r = new Random();
-        int n = 2;
+        int n = 3;
 
         int[][] matrix = new int[n][n];
         for (int i = 0; i < n; i++) {
