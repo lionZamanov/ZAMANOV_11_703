@@ -7,17 +7,14 @@ public class Task15B {
                 j = 0;
         boolean flag = false;
 
-        while(X[j] < X[j+1]) {  //если последовательностьвозрастающая, то получите исключение - выход за границы массива
-            j++;                // а что вообще делет этот фрагмент?
-        }
-        j++;
-        for (int i = j; i < X.length-1 ; i++) {
-            if(X[i] <= X[i+1]){
-                count++;
-            }else{
-                count++;
-                u[count]++;
-                count = 0;
+        for (int i = 1; i < X.length-1 ; i++) {
+            if(a[i-1] < a[i] && a[i] > a[i+1]){
+            	flag != flag;
+            	u[count]++;
+            	count = 0;
+            }
+            if(flag){
+            	count++;
             }
         }
         if(X[X.length-2]<X[X.length-1]){//почему строгое неравнство?
