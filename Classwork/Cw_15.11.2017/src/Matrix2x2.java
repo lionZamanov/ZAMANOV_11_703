@@ -115,13 +115,8 @@ public class Matrix2x2 {
     }
     public Vector2D multVector(Vector2D vector){
         Vector2D v = new Vector2D();
-        for (int line = 0; line < 2; line++) {
-            for (int j = 0; j < 2; j++) {
-                for (int k = 0; k < 2; k++) {
-                    v[line] += this.Matrix[line][k]*vector;
-                }
-            }
-        }
-        return
+        v.x = Matrix[0][0]*vector.x + Matrix[0][1]*vector.y;
+        v.y = Matrix[1][0]*vector.x + Matrix[1][1]*vector.y;
+        return v;
     }
 }

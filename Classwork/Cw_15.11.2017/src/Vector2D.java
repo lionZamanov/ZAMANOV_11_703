@@ -11,7 +11,8 @@ public class Vector2D {
         this.x = x;
         this.y = y;
     }
-
+   // |a b|  |a 0| |a b|
+   // |c d|  |c 0|
     public Vector2D add(Vector2D vector){
         Vector2D nw = new Vector2D();
         nw.x = vector.x + this.x;
