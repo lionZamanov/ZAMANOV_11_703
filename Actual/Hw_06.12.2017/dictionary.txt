@@ -1,0 +1,3 @@
+i = я
+love = люблю
+watermelons = арбузы

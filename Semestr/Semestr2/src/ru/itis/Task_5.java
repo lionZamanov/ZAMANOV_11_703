@@ -17,6 +17,7 @@ public class Task_5 {
         }
 
         for (int i = 0; i < 3; i++) {
+
             x = in.nextDouble();
             for (int j = 0; j < n - 1 && !flag; j++) {
                 if(x >= arr[j] && x < arr[j+1]){
@@ -29,7 +30,7 @@ public class Task_5 {
 
     }
     public static double f(double x, double x1, double x2){
-        return (x - x2)*F(x1)/(x1 - x2) + (x - x1)*F(x2)/(x2 - x1);
+        return (x - x2)*x1/(x1 - x2) + (x - x1)*x2/(x2 - x1);
     }
     public static double F(double x){
         return Math.log(x*x + x + 1)/(2 + x*x);
