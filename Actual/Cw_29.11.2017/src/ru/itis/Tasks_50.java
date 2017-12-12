@@ -1,4 +1,4 @@
-package ru.itis;
+package ru.itis;//-
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class Tasks_50 {
         String s1 = in.nextLine();
         String s2 = in.nextLine();
         boolean flag = true;
-        for (int i = 0; i < s1.length() && flag; i++) {
+        for (int i = 0; i < s1.length() && flag; i++) {  //ignored  length of rows
             if(s1.charAt(i) != s2.charAt(i)){
                 flag = false;
             }
