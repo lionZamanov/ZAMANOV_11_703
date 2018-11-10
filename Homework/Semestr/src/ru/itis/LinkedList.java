@@ -84,7 +84,16 @@ public class LinkedList<T> implements List<T> {
     // TODO: реализовать
     @Override
     public void addToBegin(T element) {
+        Node newNode = new Node(element);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
+        }
 
+        count++;
     }
 
     @Override

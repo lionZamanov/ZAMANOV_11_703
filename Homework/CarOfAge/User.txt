@@ -1,0 +1,10 @@
+1 Martin 19
+2 German 20
+3 Rudolf 15
+4 Carl 68
+5 Ernst 1
+6 Artur 99
+7 Alfred 25
+8 Ernst 15
+9 Wilhelm 20
+10 Gustav 20

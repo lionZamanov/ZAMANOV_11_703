@@ -1,0 +1,13 @@
+cool
+chilly
+freezing
+below zero
+mild
+warm
+scorching
+damp
+drizzling
+showers
+pouring
+breeze
+gale-force

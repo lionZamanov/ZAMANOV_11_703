@@ -35,7 +35,7 @@
       <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/itis/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
+            <state relative-caret-position="1210">
               <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
               <folding />
             </state>
@@ -45,44 +45,42 @@
       <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/itis/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-994">
-              <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="628">
+              <caret line="136" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
               <folding>
-                <element signature="class#Node#0;class#LinkedList#0" expanded="false" />
                 <element signature="method#get#0;class#LinkedList#0" expanded="false" />
-                <element signature="method#add#0;class#LinkedList#0" expanded="false" />
-                <element signature="e#1690#1733#0" expanded="false" />
                 <element signature="method#contains#0;class#LinkedList#0" expanded="false" />
-                <marker date="1520249339181" expanded="false" signature="573:588" ph=" { " />
-                <marker date="1520249339181" expanded="false" signature="612:622" ph=" }" />
-                <marker date="1520249339181" expanded="false" signature="674:689" ph=" { " />
-                <marker date="1520249339181" expanded="false" signature="716:726" ph=" }" />
+                <marker date="1520444602100" expanded="false" signature="573:588" ph=" { " />
+                <marker date="1520444602100" expanded="false" signature="612:622" ph=" }" />
+                <marker date="1520444602100" expanded="false" signature="674:689" ph=" { " />
+                <marker date="1520444602100" expanded="false" signature="716:726" ph=" }" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZhegalkinPolinom.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ZhegalkinPolinom.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/itis/ZhegalkinPolinom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="25" />
               <folding>
                 <element signature="method#ZhegalkinPolinom#1;class#ZhegalkinPolinom#0" expanded="false" />
-                <element signature="method#insert#0;class#ZhegalkinPolinom#0" expanded="false" />
+                <element signature="method#toString#0;class#ZhegalkinPolinom#0" expanded="false" />
                 <element signature="method#sum#0;class#ZhegalkinPolinom#0" expanded="false" />
                 <element signature="method#value#0;class#ZhegalkinPolinom#0" expanded="false" />
                 <element signature="method#sortByLength#0;class#ZhegalkinPolinom#0" expanded="false" />
+                <element signature="method#polinomWith#0;class#ZhegalkinPolinom#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZhegalkinPolinomTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ZhegalkinPolinomTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/itis/ZhegalkinPolinomTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,12 +133,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/ru/itis/Collection.java" />
         <option value="$PROJECT_DIR$/src/ru/itis/Node.java" />
-        <option value="$PROJECT_DIR$/src/ru/itis/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/ru/itis/ArrayList.java" />
         <option value="$PROJECT_DIR$/src/ru/itis/List.java" />
         <option value="$PROJECT_DIR$/src/ru/itis/Main.java" />
         <option value="$PROJECT_DIR$/src/ru/itis/Konj.java" />
         <option value="$PROJECT_DIR$/src/ru/itis/ZhegalkinPolinom.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/ru/itis/ZhegalkinPolinomTest.java" />
       </list>
     </option>
@@ -151,8 +149,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1008" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="238" />
+    <option name="y" value="-9" />
     <option name="width" value="920" />
     <option name="height" value="1088" />
   </component>
@@ -171,6 +170,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -194,9 +196,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,6 +204,9 @@
     <property name="last_opened_file_path" value="E:/11-703/Themes/Lambda" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -339,7 +341,16 @@
       <workItem from="1520246237999" duration="5841000" />
       <workItem from="1520322555879" duration="718000" />
       <workItem from="1520415361876" duration="85000" />
-      <workItem from="1520443130078" duration="812000" />
+      <workItem from="1520443130078" duration="2068000" />
+      <workItem from="1520462128746" duration="790000" />
+      <workItem from="1520967726161" duration="2225000" />
+      <workItem from="1521017609529" duration="14000" />
+      <workItem from="1521299333275" duration="651000" />
+      <workItem from="1521316598452" duration="36000" />
+      <workItem from="1521321082111" duration="8000" />
+      <workItem from="1523389756455" duration="824000" />
+      <workItem from="1523394959525" duration="755000" />
+      <workItem from="1523512206619" duration="1340000" />
     </task>
     <servers />
   </component>
@@ -376,69 +387,40 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51895000" />
+    <option name="totallyTimeSpent" value="59794000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="105" y="-9" width="1824" height="1098" extended-state="7" />
+    <frame x="105" y="-9" width="1824" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5219665" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5219665" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958494" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26086956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36924687" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36924687" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36924687" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5219665" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958494" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -448,7 +430,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="227" />
+      <option name="time" value="228" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -478,15 +460,12 @@
         <state relative-caret-position="2618">
           <caret line="119" column="5" lean-forward="false" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
           <folding>
-            <element signature="class#Node#0;class#LinkedList#0" expanded="false" />
             <element signature="method#get#0;class#LinkedList#0" expanded="false" />
-            <element signature="method#add#0;class#LinkedList#0" expanded="false" />
-            <element signature="e#1690#1733#0" expanded="false" />
             <element signature="method#contains#0;class#LinkedList#0" expanded="false" />
-            <marker date="1520249339181" expanded="false" signature="573:588" ph=" { " />
-            <marker date="1520249339181" expanded="false" signature="612:622" ph=" }" />
-            <marker date="1520249339181" expanded="false" signature="674:689" ph=" { " />
-            <marker date="1520249339181" expanded="false" signature="716:726" ph=" }" />
+            <marker date="1520444602100" expanded="false" signature="573:588" ph=" { " />
+            <marker date="1520444602100" expanded="false" signature="612:622" ph=" }" />
+            <marker date="1520444602100" expanded="false" signature="674:689" ph=" { " />
+            <marker date="1520444602100" expanded="false" signature="716:726" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -497,10 +476,11 @@
           <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
             <element signature="method#ZhegalkinPolinom#1;class#ZhegalkinPolinom#0" expanded="false" />
-            <element signature="method#insert#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#toString#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#sum#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#value#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#sortByLength#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#polinomWith#0;class#ZhegalkinPolinom#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -563,15 +543,12 @@
         <state relative-caret-position="2398">
           <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding>
-            <element signature="class#Node#0;class#LinkedList#0" expanded="false" />
             <element signature="method#get#0;class#LinkedList#0" expanded="false" />
-            <element signature="method#add#0;class#LinkedList#0" expanded="false" />
-            <element signature="e#1690#1733#0" expanded="false" />
             <element signature="method#contains#0;class#LinkedList#0" expanded="false" />
-            <marker date="1520249339181" expanded="false" signature="573:588" ph=" { " />
-            <marker date="1520249339181" expanded="false" signature="612:622" ph=" }" />
-            <marker date="1520249339181" expanded="false" signature="674:689" ph=" { " />
-            <marker date="1520249339181" expanded="false" signature="716:726" ph=" }" />
+            <marker date="1520444602100" expanded="false" signature="573:588" ph=" { " />
+            <marker date="1520444602100" expanded="false" signature="612:622" ph=" }" />
+            <marker date="1520444602100" expanded="false" signature="674:689" ph=" { " />
+            <marker date="1520444602100" expanded="false" signature="716:726" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -582,10 +559,11 @@
           <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
             <element signature="method#ZhegalkinPolinom#1;class#ZhegalkinPolinom#0" expanded="false" />
-            <element signature="method#insert#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#toString#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#sum#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#value#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#sortByLength#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#polinomWith#0;class#ZhegalkinPolinom#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -638,15 +616,12 @@
         <state relative-caret-position="2552">
           <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding>
-            <element signature="class#Node#0;class#LinkedList#0" expanded="false" />
             <element signature="method#get#0;class#LinkedList#0" expanded="false" />
-            <element signature="method#add#0;class#LinkedList#0" expanded="false" />
-            <element signature="e#1690#1733#0" expanded="false" />
             <element signature="method#contains#0;class#LinkedList#0" expanded="false" />
-            <marker date="1520249339181" expanded="false" signature="573:588" ph=" { " />
-            <marker date="1520249339181" expanded="false" signature="612:622" ph=" }" />
-            <marker date="1520249339181" expanded="false" signature="674:689" ph=" { " />
-            <marker date="1520249339181" expanded="false" signature="716:726" ph=" }" />
+            <marker date="1520444602100" expanded="false" signature="573:588" ph=" { " />
+            <marker date="1520444602100" expanded="false" signature="612:622" ph=" }" />
+            <marker date="1520444602100" expanded="false" signature="674:689" ph=" { " />
+            <marker date="1520444602100" expanded="false" signature="716:726" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -676,10 +651,11 @@
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="method#ZhegalkinPolinom#1;class#ZhegalkinPolinom#0" expanded="false" />
-            <element signature="method#insert#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#toString#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#sum#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#value#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#sortByLength#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#polinomWith#0;class#ZhegalkinPolinom#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -713,15 +689,12 @@
         <state relative-caret-position="2552">
           <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding>
-            <element signature="class#Node#0;class#LinkedList#0" expanded="false" />
             <element signature="method#get#0;class#LinkedList#0" expanded="false" />
-            <element signature="method#add#0;class#LinkedList#0" expanded="false" />
-            <element signature="e#1690#1733#0" expanded="false" />
             <element signature="method#contains#0;class#LinkedList#0" expanded="false" />
-            <marker date="1520249339181" expanded="false" signature="573:588" ph=" { " />
-            <marker date="1520249339181" expanded="false" signature="612:622" ph=" }" />
-            <marker date="1520249339181" expanded="false" signature="674:689" ph=" { " />
-            <marker date="1520249339181" expanded="false" signature="716:726" ph=" }" />
+            <marker date="1520444602100" expanded="false" signature="573:588" ph=" { " />
+            <marker date="1520444602100" expanded="false" signature="612:622" ph=" }" />
+            <marker date="1520444602100" expanded="false" signature="674:689" ph=" { " />
+            <marker date="1520444602100" expanded="false" signature="716:726" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -732,10 +705,11 @@
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="method#ZhegalkinPolinom#1;class#ZhegalkinPolinom#0" expanded="false" />
-            <element signature="method#insert#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#toString#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#sum#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#value#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#sortByLength#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#polinomWith#0;class#ZhegalkinPolinom#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -788,15 +762,12 @@
         <state relative-caret-position="2596">
           <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding>
-            <element signature="class#Node#0;class#LinkedList#0" expanded="false" />
             <element signature="method#get#0;class#LinkedList#0" expanded="false" />
-            <element signature="method#add#0;class#LinkedList#0" expanded="false" />
-            <element signature="e#1690#1733#0" expanded="false" />
             <element signature="method#contains#0;class#LinkedList#0" expanded="false" />
-            <marker date="1520249339181" expanded="false" signature="573:588" ph=" { " />
-            <marker date="1520249339181" expanded="false" signature="612:622" ph=" }" />
-            <marker date="1520249339181" expanded="false" signature="674:689" ph=" { " />
-            <marker date="1520249339181" expanded="false" signature="716:726" ph=" }" />
+            <marker date="1520444602100" expanded="false" signature="573:588" ph=" { " />
+            <marker date="1520444602100" expanded="false" signature="612:622" ph=" }" />
+            <marker date="1520444602100" expanded="false" signature="674:689" ph=" { " />
+            <marker date="1520444602100" expanded="false" signature="716:726" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -826,10 +797,11 @@
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="method#ZhegalkinPolinom#1;class#ZhegalkinPolinom#0" expanded="false" />
-            <element signature="method#insert#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#toString#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#sum#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#value#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#sortByLength#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#polinomWith#0;class#ZhegalkinPolinom#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -864,10 +836,11 @@
           <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="42" />
           <folding>
             <element signature="method#ZhegalkinPolinom#1;class#ZhegalkinPolinom#0" expanded="false" />
-            <element signature="method#insert#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#toString#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#sum#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#value#0;class#ZhegalkinPolinom#0" expanded="false" />
             <element signature="method#sortByLength#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#polinomWith#0;class#ZhegalkinPolinom#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -896,54 +869,17 @@
         <state relative-caret-position="880">
           <caret line="44" column="10" lean-forward="false" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
           <folding>
-            <element signature="class#Node#0;class#LinkedList#0" expanded="false" />
             <element signature="method#get#0;class#LinkedList#0" expanded="false" />
-            <element signature="method#add#0;class#LinkedList#0" expanded="false" />
-            <element signature="e#1690#1733#0" expanded="false" />
             <element signature="method#contains#0;class#LinkedList#0" expanded="false" />
-            <marker date="1520249339181" expanded="false" signature="573:588" ph=" { " />
-            <marker date="1520249339181" expanded="false" signature="612:622" ph=" }" />
-            <marker date="1520249339181" expanded="false" signature="674:689" ph=" { " />
-            <marker date="1520249339181" expanded="false" signature="716:726" ph=" }" />
+            <marker date="1520444602100" expanded="false" signature="573:588" ph=" { " />
+            <marker date="1520444602100" expanded="false" signature="612:622" ph=" }" />
+            <marker date="1520444602100" expanded="false" signature="674:689" ph=" { " />
+            <marker date="1520444602100" expanded="false" signature="716:726" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/itis/Node.java" />
-    <entry file="file://$PROJECT_DIR$/src/ru/itis/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/itis/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/itis/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-994">
-          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="class#Node#0;class#LinkedList#0" expanded="false" />
-            <element signature="method#get#0;class#LinkedList#0" expanded="false" />
-            <element signature="method#add#0;class#LinkedList#0" expanded="false" />
-            <element signature="e#1690#1733#0" expanded="false" />
-            <element signature="method#contains#0;class#LinkedList#0" expanded="false" />
-            <marker date="1520249339181" expanded="false" signature="573:588" ph=" { " />
-            <marker date="1520249339181" expanded="false" signature="612:622" ph=" }" />
-            <marker date="1520249339181" expanded="false" signature="674:689" ph=" { " />
-            <marker date="1520249339181" expanded="false" signature="716:726" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/itis/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -964,37 +900,143 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/itis/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
+        <state relative-caret-position="1210">
           <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/ZhegalkinPolinom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="25" />
+          <folding>
+            <element signature="method#ZhegalkinPolinom#1;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#toString#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#sum#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#value#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#sortByLength#0;class#ZhegalkinPolinom#0" expanded="false" />
+            <element signature="method#polinomWith#0;class#ZhegalkinPolinom#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="136" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+          <folding>
+            <element signature="method#get#0;class#LinkedList#0" expanded="false" />
+            <element signature="method#contains#0;class#LinkedList#0" expanded="false" />
+            <marker date="1520444602100" expanded="false" signature="573:588" ph=" { " />
+            <marker date="1520444602100" expanded="false" signature="612:622" ph=" }" />
+            <marker date="1520444602100" expanded="false" signature="674:689" ph=" { " />
+            <marker date="1520444602100" expanded="false" signature="716:726" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/itis/ZhegalkinPolinomTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/itis/ZhegalkinPolinom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding>
-            <element signature="method#ZhegalkinPolinom#1;class#ZhegalkinPolinom#0" expanded="false" />
-            <element signature="method#insert#0;class#ZhegalkinPolinom#0" expanded="false" />
-            <element signature="method#sum#0;class#ZhegalkinPolinom#0" expanded="false" />
-            <element signature="method#value#0;class#ZhegalkinPolinom#0" expanded="false" />
-            <element signature="method#sortByLength#0;class#ZhegalkinPolinom#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Semestr</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
