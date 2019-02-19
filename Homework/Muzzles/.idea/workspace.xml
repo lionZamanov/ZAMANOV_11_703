@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/models/ProductOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/repositories/BasketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/repositories/ProductOrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/models/Basket$BasketBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/models/ProductOrder$ProductOrderBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/models/ProductOrder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/repositories/BasketRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/repositories/ProductOrderRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/models/Basket$BasketBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/models/ProductOrder$ProductOrderBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/models/ProductOrder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/repositories/BasketRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/repositories/ProductOrderRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/servlets/MainServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/.idea/24. JavaFX.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/555aadf0009406557cc192ab577974a3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/ea243f9653e047165c5cd4988bf77b4e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/out/ru/itis/app/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/out/ru/itis/app/Test$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/out/ru/itis/app/Test$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/out/ru/itis/app/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/out/ru/itis/controllers/Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/out/sample.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/out/test.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/resources/15270591.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/resources/muzzle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/resources/sample.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/resources/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/resources/test.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/resources/whizzbang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/src/ru/itis/app/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/src/ru/itis/app/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../24. JavaFX/src/ru/itis/controllers/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Muzzles.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Muzzles/15270591.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Muzzles/muzzle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/Engine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/sample.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Muzzles/sample.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Muzzles/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Muzzles/test.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Muzzles/whizzbang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/15270591.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/muzzle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sample.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/test.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/whizzbang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/itis/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/itis/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/itis/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/itis/sample.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../allbest-o-00572388.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/.idea/dataSources/c523fb9e-a080-48aa-ab95-353f676e08be.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/.idea/dataSources/c523fb9e-a080-48aa-ab95-353f676e08be.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/.idea/dataSources/c523fb9e-a080-48aa-ab95-353f676e08be/storage_v2/_src_/database/shop.9to1AA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/.idea/dataSources/c523fb9e-a080-48aa-ab95-353f676e08be/storage_v2/_src_/database/shop.9to1AA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/models/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/models/Basket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/repositories/AuthRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/repositories/AuthRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/repositories/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/repositories/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/repositories/ProductRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/repositories/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/repositories/UsersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/repositories/UsersRepositoryJdbcTemplateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/repositories/UsersRepositoryJdbcTemplateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/services/ProductsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/services/ProductsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/services/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/services/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/services/UsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/services/UsersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/servlets/JsonServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/servlets/JsonServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/servlets/ShopServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/java/ru/itis/servlets/ShopServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/src/main/webapp/jsp/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/src/main/webapp/jsp/shop.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1.war" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/models/Basket.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/models/Basket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/models/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/models/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/repositories/AuthRepositoryImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/repositories/AuthRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/repositories/AuthRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/repositories/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/repositories/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/repositories/ProductRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/repositories/ProductRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/repositories/UsersRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/repositories/UsersRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/repositories/UsersRepositoryJdbcTemplateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/repositories/UsersRepositoryJdbcTemplateImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/services/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/services/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/services/ProductsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/services/ProductsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/services/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/services/UsersService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/services/UsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/services/UsersServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/servlets/JsonServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/servlets/JsonServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/servlets/ShopServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/WEB-INF/classes/ru/itis/servlets/ShopServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/jsp/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/basket-example-0.1/jsp/shop.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/models/Basket.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/models/Basket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/models/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/models/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/repositories/AuthRepositoryImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/repositories/AuthRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/repositories/AuthRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/repositories/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/repositories/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/repositories/ProductRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/repositories/ProductRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/repositories/UsersRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/repositories/UsersRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/repositories/UsersRepositoryJdbcTemplateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/repositories/UsersRepositoryJdbcTemplateImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/services/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/services/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/services/ProductsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/services/ProductsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/services/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/services/UsersService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/services/UsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/services/UsersServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/servlets/JsonServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/servlets/JsonServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/servlets/ShopServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../23. Basket Example/target/classes/ru/itis/servlets/ShopServlet.class" afterDir="false" />
+    </list>
+    <ignored path="JavaFxApplication.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1556603517">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.20" value="2" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="2" />
+          <entry key="JAVA" value="4" />
+          <entry key="XML" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2873" />
+          <entry key="XML" value="88" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="JavaFxApplication" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/itis/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/test.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ru/itis/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="66" column="73" lean-forward="true" selection-start-line="66" selection-start-column="73" selection-end-line="66" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sette</find>
+    </findStrings>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ru/Controller.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/Main.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/test.fxml" />
+        <option value="$PROJECT_DIR$/src/ru/itis/Engine.java" />
+        <option value="$PROJECT_DIR$/resources/test.fxml" />
+        <option value="$PROJECT_DIR$/src/ru/itis/Controller.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="166" />
+    <option name="y" value="106" />
+    <option name="width" value="1615" />
+    <option name="height" value="880" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Muzzles" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Muzzles" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Muzzles" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Muzzles" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Muzzles" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Muzzles" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="itis" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550582633521" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="recentsLimit" value="5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ZAMANOV_11_703\Homework\Muzzles" />
+      <recent name="E:\ZAMANOV_11_703\Homework\Muzzles\src\ru\itis" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ZAMANOV_11_703\Homework\Muzzles\src\ru\itis" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itis.Main" />
+      <module name="Muzzles" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.itis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ru.Main" />
+      <module name="Muzzles" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <created>1359379246138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1359379246138</updated>
+      <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1550494919889" duration="3937000" />
+      <workItem from="1550500604035" duration="1277000" />
+      <workItem from="1550507280284" duration="11794000" />
+      <workItem from="1550574537864" duration="6797000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="25107000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="56" y="-7" width="1487" height="878" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.12894183" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25100672" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3704698" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Problems" order="9" />
+      <window_info anchor="bottom" id="Changes" order="10" />
+      <window_info anchor="bottom" id="Profiler" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3261745" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="15" visible="true" weight="0.32885906" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="JetGradle" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/test.fxml" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="7068" column="22" selection-start-line="7068" selection-start-column="22" selection-end-line="7068" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/javafx/scene/input/MouseEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-588">
+          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/javafx/animation/TimelineBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/whizzbang.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/Engine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/test.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="66" column="73" lean-forward="true" selection-start-line="66" selection-start-column="73" selection-end-line="66" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

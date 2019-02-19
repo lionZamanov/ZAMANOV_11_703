@@ -48,17 +48,14 @@ public class UsersServiceImpl implements UsersService {
     @Override
     public String signIn(SignInForm form) {
         User user = usersRepository.findByName(form.getName());
-
         if (user != null && encoder.matches(form.getPassword(), user.getPasswordHash())) {
             String cookieValue = UUID.randomUUID().toString();
-
             Auth auth = Auth.builder()
                     .user(user)
                     .cookieValue(cookieValue)
                     .build();
 
             authRepository.save(auth);
-
             return cookieValue;
         }
         return null;
@@ -66,23 +63,10 @@ public class UsersServiceImpl implements UsersService {
 
     @Override
     public boolean isExistByCookie(String cookieValue) {
-        if (authRepository.findByCookieValue(cookieValue) != null) {
-            return true;
-        }
-        return false;
+        return authRepository.findByCookieValue(cookieValue) != null;
     }
 
     public boolean addProduct(User user, Product product) {
         return usersRepository.addProduct(user, product);
-    }
-
-    @Override
-    public User getUserByCookie(String cookie) {
-        return usersRepository.finByCookie(cookie);
-    }
-
-    @Override
-    public User getUserById(Long id) {
-        return usersRepository.find(id);
     }
 }

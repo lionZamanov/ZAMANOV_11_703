@@ -1,0 +1,15 @@
+#helloLabel {
+    -fx-background-color: green;
+}
+#gridPane{
+
+}
+.root {
+    -fx-background-image: url("15270591.jpg");
+    -fx-background-repeat: repeat-x;
+    -fx-background-position: center bottom;
+    -fx-background-color: #000;
+}
+#muzzle1{
+
+}

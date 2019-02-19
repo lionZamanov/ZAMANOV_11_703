@@ -3,7 +3,10 @@ package ru.itis.repositories;
 import lombok.SneakyThrows;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import ru.itis.models.Product;
 import ru.itis.models.User;
 
@@ -21,13 +24,10 @@ import java.util.List;
 public class UsersRepositoryJdbcTemplateImpl implements UsersRepository {
 
     private JdbcTemplate jdbcTemplate;
-    private ProductRepository productRepository;
+    private BasketRepository basketRepository;
 
     private Connection connection;
     private Statement statement;
-    private static final String URL = "jdbc:postgresql://localhost:5432/shop";
-    private static final String USER = "postgres";
-    private static final String PASSWORD = "adminroot";
 
     //language=SQL
     private static final String SQL_SELECT_USER_BY_ID =
@@ -45,12 +45,14 @@ public class UsersRepositoryJdbcTemplateImpl implements UsersRepository {
     private static final String SQL_SELECT_BY_NAME =
             "select * from shop_user where name = ?";
 
+
    /* TODO: НА ВСЕ ТАКИЕ ЗАПРОСЫ ДЕЛАТЬ? КАК ДЕЛАТЬ JOIN'Ы?
     private static final String SQL_ADD_PRODUCT_TO_USER =
             "INSERT INTO user_products VALUES ('?')";*/
 
     private RowMapper<User> userRowMapper = (resultSet, i) -> User.builder()
             .id(resultSet.getLong("id"))
+            .basket(basketRepository.findUserBasket(resultSet.getLong("id")))
             .name(resultSet.getString("name"))
             .passwordHash(resultSet.getString("password_hash"))
             .build();
@@ -58,9 +60,9 @@ public class UsersRepositoryJdbcTemplateImpl implements UsersRepository {
     @SneakyThrows
     public UsersRepositoryJdbcTemplateImpl(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
-        connection = DriverManager.getConnection(URL, USER, PASSWORD);
+        connection = dataSource.getConnection();
         statement = connection.createStatement();
-        productRepository = new ProductRepositoryImpl(dataSource);
+        basketRepository = new BasketRepository(dataSource);
     }
 
     @Override
@@ -71,15 +73,21 @@ public class UsersRepositoryJdbcTemplateImpl implements UsersRepository {
     //TODO: на каком уровне с продуктами здесь работаю? REPOSITORY или SERVICE?
     @Override
     public User find(Long id) {
-        User user = jdbcTemplate.queryForObject(SQL_SELECT_USER_BY_ID,
-                userRowMapper, id);
-        user.setBasket(productRepository.findUserBasket(user.getId()));
-        return user;
+        return jdbcTemplate.queryForObject(SQL_SELECT_USER_BY_ID, userRowMapper, id);
     }
 
     @Override
     public void save(User model) {
-        jdbcTemplate.update(SQL_INSERT, model.getName(), model.getPasswordHash(), model.getAge());
+        KeyHolder holder = new GeneratedKeyHolder();
+        jdbcTemplate.update(connection -> {
+            PreparedStatement ps = connection.prepareStatement(SQL_INSERT, Statement.RETURN_GENERATED_KEYS);
+            ps.setString(1, model.getName());
+            ps.setString(2, model.getPasswordHash());
+            ps.setInt(3, model.getAge());
+            return ps;
+        }, holder);
+        Long newUserId = Long.valueOf(holder.getKeys().get("id").toString());
+        basketRepository.newBasket(newUserId);
     }
 
     @Override
@@ -95,7 +103,8 @@ public class UsersRepositoryJdbcTemplateImpl implements UsersRepository {
     @Override
     public User findByName(String name) {
         try {
-            return jdbcTemplate.queryForObject(SQL_SELECT_BY_NAME, userRowMapper, name);
+            User user = jdbcTemplate.queryForObject(SQL_SELECT_BY_NAME, userRowMapper, name);
+            return user;
         } catch (EmptyResultDataAccessException e) {
             return null;
         }
@@ -103,21 +112,25 @@ public class UsersRepositoryJdbcTemplateImpl implements UsersRepository {
 
     @Override
     @SneakyThrows
-    public User finByCookie(String cookie) {
+    public User findByCookie(String cookie) {
         //language=SQL
         ResultSet resultSet = statement.executeQuery("SELECT * FROM auth WHERE cookie_value = '" + cookie + "';");
         resultSet.next();
         Long id = resultSet.getLong("user_id");
-        User user = jdbcTemplate.queryForObject(SQL_SELECT_USER_BY_ID,
-                userRowMapper, id);
-        productRepository.findUserBasket(user.getId());
-        user.setBasket(productRepository.findUserBasket(user.getId()));
-        return user;
+        return jdbcTemplate.queryForObject(SQL_SELECT_USER_BY_ID, userRowMapper, id);
     }
 
     @Override
     @SneakyThrows
     public boolean addProduct(User user, Product product) {
-        return statement.execute("INSERT INTO user_products VALUES ('" + product.getId() + "','" + user.getId() + "')");
+        ResultSet result = statement.executeQuery("SELECT * FROM user_products WHERE product_id = " + product.getId() + " AND user_id = " + user.getId() + ";");
+        if (result.next()) {
+            int count = result.getInt("count") + 1;
+            return statement.execute("UPDATE user_products SET count = '" + count + "' WHERE product_id = " + product.getId() + " AND user_id = " + user.getId() + ";");
+        }
+        String sql = "INSERT INTO user_products VALUES (" + product.getId() + "," + user.getId() + ", 1 );";
+        return statement.execute(sql);
     }
+
+
 }

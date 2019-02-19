@@ -1,9 +1,11 @@
 package ru.itis.models;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -16,8 +18,10 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class Basket {
     private Long id;
-    private List<Product> products;
+    private List<ProductOrder> products;
+    private Date lastChange;
 }
 

@@ -28,8 +28,7 @@ public class ProductRepositoryImpl implements ProductRepository {
             "select * from product WHERE product_id = ?;";
     //language=SQL
     private static final String SQL_SELECT_GET_USER_BASKET_BY_ID =
-            "select * from (SELECT * FROM user_products WHERE user_id = ?) AS saf " +
-                    "JOIN product ON saf.product_id = product.product_id;";
+            "select * from (SELECT * FROM user_products WHERE user_id = ?) AS saf JOIN product ON saf.product_id = product.product_id;";
 
     private RowMapper<Product> productRowMapper = (resultSet, i) -> Product.builder()
             .id(resultSet.getLong("product_id"))
@@ -44,19 +43,15 @@ public class ProductRepositoryImpl implements ProductRepository {
     }
 
     @Override
-    public Product findProductById(Long id) {
-        return jdbcTemplate.query(SQL_SELECT_GET_PRODUCT_BY_ID, productRowMapper, id).get(0);
+    public List<Product> findUserProducts(Long id) {
+        List<Product> pr =  jdbcTemplate.query(SQL_SELECT_GET_USER_BASKET_BY_ID, productRowMapper, id);
+        return pr;
     }
-
-    @Override
-    public Basket findUserBasket(Long id) {
-        return jdbcTemplate.query(SQL_SELECT_GET_USER_BASKET_BY_ID, productRowMapper, id);
-    }
-
 
     @Override
     public Product find(Long id) {
-        return null;
+        return jdbcTemplate.query(SQL_SELECT_GET_PRODUCT_BY_ID, productRowMapper, id).get(0);
+
     }
 
     @Override

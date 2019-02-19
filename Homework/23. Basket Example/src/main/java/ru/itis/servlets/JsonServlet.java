@@ -2,11 +2,8 @@ package ru.itis.servlets;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import ru.itis.models.Product;
-import ru.itis.models.User;
+import ru.itis.models.Basket;
 import ru.itis.repositories.*;
-import ru.itis.services.ProductService;
-import ru.itis.services.ProductsServiceImpl;
 import ru.itis.services.UsersService;
 import ru.itis.services.UsersServiceImpl;
 
@@ -17,13 +14,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 @WebServlet("/products.json")
 public class JsonServlet extends HttpServlet {
 
     private UsersService usersService;
+    private UsersRepository usersRepository;
     private ObjectMapper objectMapper = new ObjectMapper();
 
     @Override
@@ -33,7 +29,7 @@ public class JsonServlet extends HttpServlet {
         dataSource.setUsername("postgres");
         dataSource.setPassword("adminroot");
         dataSource.setUrl("jdbc:postgresql://localhost:5432/shop");
-        UsersRepository usersRepository = new UsersRepositoryJdbcTemplateImpl(dataSource);
+        usersRepository = new UsersRepositoryJdbcTemplateImpl(dataSource);
         AuthRepository authRepository = new AuthRepositoryImpl(dataSource);
         usersService = new UsersServiceImpl(usersRepository, authRepository);
     }
@@ -43,14 +39,33 @@ public class JsonServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String i = request.getParameter("userId");
-        User user = usersService.getUserById(Long.parseLong(request.getParameter("userId")));
+     /*   User user = usersService.getUserById(Long.parseLong(request.getParameter("userId")));
         if (user != null) {
-            List<Product> allProducts = user.getBasket();
+            Basket allProducts = user.getBasket();
             String json = objectMapper.writeValueAsString(allProducts);
             response.setContentType("application/json; charset=UTF-8");
             response.getWriter().write(json);
+        }*/
+        Cookie authCookie = authCookie(request.getCookies());
+        if(authCookie != null){
+            Basket basket = usersRepository.findByCookie(authCookie.getValue()).getBasket();
+            String json = objectMapper.writeValueAsString(basket.getProducts());
+            response.setContentType("application/json; charset=UTF-8");
+            response.getWriter().write(json);
         }
+    }
+
+    private Cookie authCookie(Cookie[] cookies){
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                if (cookie.getName().equals("auth")) {
+                    if (usersService.isExistByCookie(cookie.getValue())) {
+                        return cookie;
+                    }
+                }
+            }
+        }
+        return null;
     }
 
 }

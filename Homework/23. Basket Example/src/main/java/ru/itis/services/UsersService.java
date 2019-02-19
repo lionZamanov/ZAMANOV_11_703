@@ -20,8 +20,4 @@ public interface UsersService {
     boolean isExistByCookie(String cookieValue);
 
     boolean addProduct(User user, Product product);
-
-    User getUserByCookie(String cookie);
-
-    User getUserById(Long id);
 }

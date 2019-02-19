@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane id="pane" alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" stylesheets="@styles.css" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itis.controllers.Controller">
+   <children>
+      <AnchorPane maxHeight="500.0" maxWidth="997.0" minHeight="469.0" minWidth="500.0" prefHeight="469.0" prefWidth="598.0" GridPane.columnIndex="2">
+         <children>
+           
+         </children>
+      </AnchorPane>
+      <ImageView id="muzzle1" fx:id="muzzle1" fitHeight="64.0" fitWidth="185.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <image>
+            <Image url="@muzzle.png" />
+         </image></ImageView>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="469.0" minHeight="424.0" prefHeight="469.0" />
+      <RowConstraints maxHeight="45.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="64.0" minHeight="64.0" prefHeight="64.0" />
+   </rowConstraints>
+</GridPane>

@@ -17,6 +17,16 @@
             font-family: sans-serif;
         }
 
+        button {
+            background: #00b5cc;
+            border: 0;
+            padding: 10px;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 700;
+            border-bottom: 3px solid #078390;
+        }
+
         table {
             font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
             font-size: 14px;
@@ -80,22 +90,36 @@
     <table id="user-products">
         <tr>
             <th>id</th>
-            <th>title</th>
-            <th>cost</th>
-            <th>Delete</th>
+            <th>Title</th>
+            <th>Cost</th>
+            <th>Count</th>
 
         </tr>
-        <c:forEach items="${userProducts}" var="product">
+        <%--<c:forEach items="${userProducts}" var="product">
             <tr>
                 <td>${product.id}</td>
                 <td>${product.title}</td>
                 <td>${product.cost}</td>
             </tr>
-        </c:forEach>
+        </c:forEach>--%>
     </table>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" charset="utf-8">
+
+    function loadUserProducts() {
+        $.ajax({
+            method: "GET",
+            url: "/products.json"
+        })
+            .done(function (data) {
+                console.log(data);
+                printProducts(data)
+            });
+    }
+
+    $(document).ready(loadUserProducts());
+
     $('button').click(function () {
         var productId = $(this).attr("id");
         $.ajax({
@@ -104,16 +128,27 @@
             data: {id: productId}
         })
             .done(function (data) {
-                console.log(data);
-                var product = '<tr>';
-                product += "<td>" + data.id + "</td>";
-                product += "<td>" + data.title + "</td>";
-                product += "<td>" + data.cost + "</td>";
-                product += "</tr>";
-                console.log(product);
-                $("#user-products tr:last").after(product)
+                loadUserProducts();
             });
-    })
+    });
+
+    function printProducts(products) {
+        $("#user-products tr:nth-child(n+2)").remove();
+        $.each(products, function (index, product) {
+            printProduct(product);
+        })
+    }
+
+    function printProduct(productData) {
+        var result = '<tr>';
+        result += "<td>" + productData.product.id + "</td>";
+        result += "<td>" + productData.product.title + "</td>";
+        result += "<td>" + productData.product.cost + "</td>";
+        result += "<td>" + productData.count + "</td>";
+        result += "</tr>";
+        console.log(result);
+        $("#user-products tr:last").after(result)
+    }
 </script>
 </body>
 </html>

@@ -115,8 +115,8 @@
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionTimestamp>2018-10-29.01:49:47.121</IntrospectionTimestamp>
-      <IntrospectionStateNumber>530522</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-12-02.14:41:18.476</IntrospectionTimestamp>
+      <IntrospectionStateNumber>530599</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -160,15 +160,7 @@
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
-    <sequence id="32" parent="23" name="basket_basket_id_seq">
-      <ObjectId>25089</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>530485</StateNumber>
-      <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
-    </sequence>
-    <sequence id="33" parent="23" name="shop_user_id_seq">
+    <sequence id="32" parent="23" name="shop_user_id_seq">
       <ObjectId>25078</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>530484</StateNumber>
@@ -176,44 +168,44 @@
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
-    <table id="34" parent="23" name="auth">
+    <table id="33" parent="23" name="auth">
       <ObjectId>25131</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>530499</StateNumber>
     </table>
-    <table id="35" parent="23" name="basket">
+    <table id="34" parent="23" name="basket">
       <ObjectId>25091</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>530504</StateNumber>
+      <StateNumber>530599</StateNumber>
     </table>
-    <table id="36" parent="23" name="product">
+    <table id="35" parent="23" name="product">
       <ObjectId>33280</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>530522</StateNumber>
     </table>
-    <table id="37" parent="23" name="shop_user">
+    <table id="36" parent="23" name="shop_user">
       <ObjectId>25080</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>530522</StateNumber>
+      <StateNumber>530599</StateNumber>
     </table>
-    <table id="38" parent="23" name="user_products">
+    <table id="37" parent="23" name="user_products">
       <ObjectId>33299</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>530522</StateNumber>
+      <StateNumber>530586</StateNumber>
     </table>
-    <column id="39" parent="34" name="user_id">
+    <column id="38" parent="33" name="user_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>530494</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="40" parent="34" name="cookie_value">
+    <column id="39" parent="33" name="cookie_value">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>530494</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="41" parent="34" name="id">
+    <column id="40" parent="33" name="id">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -222,18 +214,18 @@
       <TypeId>23</TypeId>
       <SequenceName>auth_id_seq</SequenceName>
     </column>
-    <index id="42" parent="34" name="auth_pkey">
+    <index id="41" parent="33" name="auth_pkey">
       <ObjectId>33272</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="43" parent="34" name="auth_pkey">
+    <key id="42" parent="33" name="auth_pkey">
       <ObjectId>33273</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>auth_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="44" parent="34" name="auth_user_id_fkey">
+    <foreign-key id="43" parent="33" name="auth_user_id_fkey">
       <ObjectId>25134</ObjectId>
       <ColNames>user_id</ColNames>
       <RefTableId>25080</RefTableId>
@@ -242,34 +234,32 @@
       <RefKeyName>shop_user_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="45" parent="35" name="user_id">
+    <column id="44" parent="34" name="user_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>530485</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="46" parent="35" name="basket_id">
-      <Position>2</Position>
-      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>530485</StateNumber>
-      <DefaultExpression>nextval(&apos;basket_basket_id_seq&apos;::regclass)</DefaultExpression>
+      <StateNumber>530598</StateNumber>
       <TypeId>23</TypeId>
-      <SequenceName>basket_basket_id_seq</SequenceName>
     </column>
-    <index id="47" parent="35" name="basket_pkey">
-      <ObjectId>25095</ObjectId>
-      <ColNames>basket_id</ColNames>
+    <column id="45" parent="34" name="last_change">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>530576</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="46" parent="34" name="basket_pkey">
+      <ObjectId>33312</ObjectId>
+      <ColNames>user_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="48" parent="35" name="basket_pkey">
-      <ObjectId>25096</ObjectId>
-      <ColNames>basket_id</ColNames>
+    <key id="47" parent="34" name="basket_pkey">
+      <ObjectId>33313</ObjectId>
+      <ColNames>user_id</ColNames>
       <UnderlyingIndexName>basket_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="49" parent="35" name="basket_user_id_fkey">
-      <ObjectId>25097</ObjectId>
+    <foreign-key id="48" parent="34" name="basket_user_id_fkey">
+      <ObjectId>33314</ObjectId>
       <ColNames>user_id</ColNames>
       <RefTableId>25080</RefTableId>
       <RefColPositions>1</RefColPositions>
@@ -277,7 +267,7 @@
       <RefKeyName>shop_user_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="50" parent="36" name="product_id">
+    <column id="49" parent="35" name="product_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -286,30 +276,30 @@
       <TypeId>23</TypeId>
       <SequenceName>product_product_id_seq</SequenceName>
     </column>
-    <column id="51" parent="36" name="product_name">
+    <column id="50" parent="35" name="product_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>530501</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="52" parent="36" name="cost">
+    <column id="51" parent="35" name="cost">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>530501</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="53" parent="36" name="product_pkey">
+    <index id="52" parent="35" name="product_pkey">
       <ObjectId>33284</ObjectId>
       <ColNames>product_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="54" parent="36" name="product_pkey">
+    <key id="53" parent="35" name="product_pkey">
       <ObjectId>33285</ObjectId>
       <ColNames>product_id</ColNames>
       <UnderlyingIndexName>product_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="55" parent="37" name="id">
+    <column id="54" parent="36" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -318,48 +308,54 @@
       <TypeId>23</TypeId>
       <SequenceName>shop_user_id_seq</SequenceName>
     </column>
-    <column id="56" parent="37" name="name">
+    <column id="55" parent="36" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>530495</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="57" parent="37" name="password_hash">
+    <column id="56" parent="36" name="password_hash">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>530496</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="58" parent="37" name="age">
+    <column id="57" parent="36" name="age">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>530493</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="59" parent="37" name="shop_user_pkey">
+    <index id="58" parent="36" name="shop_user_pkey">
       <ObjectId>25087</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="60" parent="37" name="shop_user_pkey">
+    <key id="59" parent="36" name="shop_user_pkey">
       <ObjectId>25088</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>shop_user_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="61" parent="38" name="product_id">
+    <column id="60" parent="37" name="product_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>530522</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="62" parent="38" name="user_id">
+    <column id="61" parent="37" name="user_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>530522</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="63" parent="38" name="user_products_product_id_fkey">
+    <column id="62" parent="37" name="count">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>530586</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="63" parent="37" name="user_products_product_id_fkey">
       <ObjectId>33302</ObjectId>
       <ColNames>product_id</ColNames>
       <RefTableId>33280</RefTableId>
@@ -368,7 +364,7 @@
       <RefKeyName>product_pkey</RefKeyName>
       <RefColNames>product_id</RefColNames>
     </foreign-key>
-    <foreign-key id="64" parent="38" name="user_products_user_id_fkey">
+    <foreign-key id="64" parent="37" name="user_products_user_id_fkey">
       <ObjectId>33307</ObjectId>
       <ColNames>user_id</ColNames>
       <RefTableId>25080</RefTableId>
