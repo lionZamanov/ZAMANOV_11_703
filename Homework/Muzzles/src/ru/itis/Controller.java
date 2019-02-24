@@ -22,10 +22,10 @@ public class Controller {
     private GridPane gridPane;
 
     @FXML
-    private ImageView muzzle1;
+    private ImageView muzzleImg1;
 
     @FXML
-    private ImageView muzzle2;
+    private ImageView muzzleImg2;
 
     @FXML
     private ImageView whizzbang1;
@@ -33,30 +33,27 @@ public class Controller {
     @FXML
     private ImageView whizzbang2;
 
-    private ImageView currentWhizzbang;
-    private ImageView currentMuzzle;
-    private ImageView enemyMuzzle;
+    private Muzzle currentMuzzle;
+    private Muzzle enemyMuzzle;
 
     @FXML
     public void initialize() {
+        Muzzle muzzle1 = new Muzzle(muzzleImg1, whizzbang1, 1);
+        Muzzle muzzle2 = new Muzzle(muzzleImg2, whizzbang2, -1);
         currentMuzzle = muzzle1;
         enemyMuzzle = muzzle2;
-        currentWhizzbang = whizzbang1;
         gridPane.setOnMouseMoved(this::muzzleRotate);
         gridPane.setOnMouseClicked(this::shoot);
     }
 
     private void muzzleRotate(MouseEvent event) {
-        if (currentMuzzle == muzzle1) {
-            currentMuzzle.getTransforms().setAll(new Rotate(-getAngle(event.getX(), event.getY(), 10), 0, 30));
-        } else {
-            currentMuzzle.getTransforms().setAll(new Rotate(180-getAngle(event.getX(), event.getY(), -10), 0, 30));
-        }
+        //currentMuzzle.getTransforms().setAll(new Rotate(getAngle(event.getX(), event.getY(), currentMuzzle.getDirection()), 0, 30));
+        currentMuzzle.transform(new Rotate(-getAngle(event.getX(), event.getY(), currentMuzzle.getDirection()), 0, 30));
     }
 
     private void shoot(MouseEvent event) {
         final double[] t = {0};
-        final double[] dropped = {0};
+        currentMuzzle.getWhizzbang().setVisible(true);
         Engine engine = new Engine();
         Timeline timeline = new Timeline();
         timeline.setCycleCount(Timeline.INDEFINITE);
@@ -64,31 +61,25 @@ public class Controller {
                 new Duration(10),
                 s -> {
                     t[0] += 0.07;
-                    double x0 = currentWhizzbang.getLayoutX() - event.getX();
-                    double y0 = currentWhizzbang.getLayoutY() - event.getY();
+                    double x0 = currentMuzzle.getWhizzbang().getLayoutX() - event.getX();
+                    double y0 = currentMuzzle.getWhizzbang().getLayoutY() - event.getY();
                     double[] coord;
-                    if (currentWhizzbang == whizzbang1) {
-                        coord = engine.getCoordinatesByVector(Math.sqrt(x0 * x0 + y0 * y0), 0.3, 1, getAngle(event.getX(), event.getY(), 10), t[0]);
-                    } else {
-                        coord = engine.getCoordinatesByVector(Math.sqrt(x0 * x0 + y0 * y0), 0.3, 1, getAngle(event.getX(), event.getY(), -10), t[0]);
-                    }
-                    currentWhizzbang.setTranslateX(coord[0]);
+                    coord = engine.getCoordinatesByVector(Math.sqrt(x0 * x0 + y0 * y0), 0.3, 1, getAngle(event.getX(), event.getY(), currentMuzzle.getDirection()), t[0]);
+                    currentMuzzle.getWhizzbang().setTranslateX(coord[0]);
                     if (t[0] > 15) {
-                        ImageView change = currentMuzzle;
+                        currentMuzzle.getWhizzbang().setTranslateX(0);
+                        currentMuzzle.getWhizzbang().setTranslateY(0);
+                        Muzzle change = currentMuzzle;
                         currentMuzzle = enemyMuzzle;
                         enemyMuzzle = change;
-                        currentWhizzbang.setTranslateX(0);
-                        currentWhizzbang.setTranslateY(0);
-                        currentWhizzbang = currentWhizzbang == whizzbang2 ? whizzbang1 : whizzbang2;
                         t[0] = 0;
                         timeline.stop();
                     } else {
-                        if (coord[1] > 10) {
-                            dropped[0] += 0.01;
-                            currentWhizzbang.getTransforms().add(new Rotate(1 / (dropped[0] * 3), 20, 20));
+                        if (coord[1] > 0) {
+                            currentMuzzle.getWhizzbang().setVisible(false);
                         } else {
-                            currentWhizzbang.setTranslateY(coord[1]);
-                            currentWhizzbang.getTransforms().add(new Rotate(3, 20, 20));
+                            currentMuzzle.getWhizzbang().setTranslateY(coord[1]);
+                            currentMuzzle.getWhizzbang().getTransforms().add(new Rotate(3 * currentMuzzle.getDirection(), 20, 20));
                         }
                     }
                 }
