@@ -1,4 +1,4 @@
-package ru.itis;
+package ru.itis.game;
 
 import javax.swing.text.Element;
 
@@ -11,39 +11,49 @@ public class Muzzle {
     ImageView muzzle;
     ImageView whizzbang;
     double direction;
+    double hp;
 
-    public ImageView getMuzzle() {
+    double getHp() {
+        return hp;
+    }
+
+    void setHp(double hp) {
+        this.hp = hp;
+    }
+
+    ImageView getMuzzle() {
         return muzzle;
     }
 
-    public ImageView getWhizzbang() {
+    ImageView getWhizzbang() {
         return whizzbang;
     }
 
-    public double getDirection() {
+    double getDirection() {
         return direction;
     }
 
-    public Muzzle(ImageView muzzle, ImageView whizzbang, double direction) {
+    Muzzle(ImageView muzzle, ImageView whizzbang, double direction) {
         whizzbang.setVisible(false);
         this.muzzle = muzzle;
         this.whizzbang = whizzbang;
         this.direction = direction;
+        this.hp = 100;
     }
 
-    public void transform(Rotate rotate){
+    void transform(Rotate rotate) {
         muzzle.getTransforms().setAll(rotate);
     }
 
-    public double getLayoutX(){
+    double getLayoutX() {
         return muzzle.getLayoutX();
     }
 
-    public double getLayoutY(){
+    double getLayoutY() {
         return muzzle.getLayoutY();
     }
 
-    public double getFitHeight(){
+    double getFitHeight() {
         return muzzle.getFitHeight();
     }
 }

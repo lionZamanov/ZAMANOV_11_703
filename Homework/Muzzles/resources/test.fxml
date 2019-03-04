@@ -9,44 +9,54 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?scenebuilder-stylesheet ../resources/styles.css?>
 
-<GridPane id="pane" fx:id="gridPane" prefHeight="500.0" prefWidth="992.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itis.Controller">
+<GridPane id="pane" fx:id="gridPane" prefHeight="502.0" prefWidth="1158.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itis.game.Controller">
 
     <ImageView fx:id="whizzbang1" fitHeight="40" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2">
         <Image url="@whizzbang.png" />
         <GridPane.margin>
-            <Insets bottom="100.0" left="30.0" />
+            <Insets bottom="100.0" left="20.0" />
         </GridPane.margin>
     </ImageView>
     <ImageView fx:id="whizzbang2" fitHeight="40" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
         <Image url="@whizzbang.png" />
         <GridPane.margin>
-            <Insets bottom="100.0" left="530.0" />
+            <Insets bottom="100.0" left="650.0" />
         </GridPane.margin>
     </ImageView>
+
     <ImageView fx:id="muzzleImg1" fitHeight="105.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2">
         <Image url="@muzzle.png" />
         <GridPane.margin>
-            <Insets bottom="100.0" left="30.0" />
+            <Insets bottom="80.0" left="30.0" />
         </GridPane.margin>
     </ImageView>
-
-    <!--<ImageView fx:id="whizzbang2" fitHeight="40" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1"
-               GridPane.rowIndex="2">
-        <Image url="@whizzbang.png"/>
-        <GridPane.margin>
-            <Insets bottom="100.0" left="650.0"/>
-        </GridPane.margin>
-    </ImageView>-->
     <ImageView fx:id="muzzleImg2" fitHeight="105.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
         <Image url="@muzzle.png" />
         <GridPane.margin>
-            <Insets bottom="100.0" left="600.0" />
+            <Insets bottom="80.0" left="700.0" />
         </GridPane.margin>
     </ImageView>
 
-    <Label fx:id="helloLabel">
-
+    <Label fx:id="windLabel">
+        wind
+        <GridPane.margin>
+            <Insets left="450.0" bottom="250"/>
+        </GridPane.margin>
     </Label>
+
+    <Label fx:id="hpLabel1">
+        <GridPane.margin>
+            <Insets bottom="250"/>
+        </GridPane.margin>
+    </Label>
+
+    <Label fx:id="hpLabel2" GridPane.columnIndex="1">
+        2
+        <GridPane.margin>
+            <Insets left="650.0" bottom="250" />
+        </GridPane.margin>
+    </Label>
+
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />

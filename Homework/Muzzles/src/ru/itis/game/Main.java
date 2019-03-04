@@ -1,4 +1,4 @@
-package ru.itis;
+package ru.itis.game;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

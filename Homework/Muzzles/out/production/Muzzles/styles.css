@@ -1,5 +1,8 @@
-#helloLabel {
-    -fx-background-color: green;
+#windLabel {
+    -fx-background-color: #468041;
+}
+#hpLabel1, #hpLabel2{
+    -fx-background-color: #ff3f43;
 }
 #gridPane{
 

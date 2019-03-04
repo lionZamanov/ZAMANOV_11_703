@@ -1,4 +1,4 @@
-package ru.itis;
+package ru.itis.game;
 
 class Engine {
     private static final double G = 50;
