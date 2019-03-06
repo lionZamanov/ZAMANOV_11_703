@@ -62,7 +62,7 @@ public class Controller {
         final double[] t = {0};
         currentMuzzle.getWhizzbang().setVisible(true);
         Engine engine = new Engine();
-        if(!locked) {
+        if (!locked) {
             locked = true;
             Timeline timeline = new Timeline();
             timeline.setCycleCount(Timeline.INDEFINITE);
@@ -100,6 +100,7 @@ public class Controller {
     }
 
     private double getAngle(double x, double y, double vector) {
+        /*
         double angle;
         double ax = Math.abs(x - currentMuzzle.getLayoutX());
         double ay = Math.abs(y - (currentMuzzle.getLayoutY() + currentMuzzle.getFitHeight() / 4));
@@ -107,7 +108,8 @@ public class Controller {
         double by = 0;
         double cos = (ax * bx + ay * by) / (Math.sqrt(ax * ax + ay * ay) * Math.sqrt(bx * bx + by * by));
         angle = 180 * Math.acos(cos) / Math.PI;
-        return angle;
+        */
+        return 0.0;
     }
 
     private void changeTurn() {

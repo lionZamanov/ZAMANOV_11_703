@@ -13,11 +13,11 @@ public class Muzzle {
     double direction;
     double hp;
 
-    double getHp() {
+    public double getHp() {
         return hp;
     }
 
-    void setHp(double hp) {
+    public void setHp(double hp) {
         this.hp = hp;
     }
 
@@ -25,15 +25,15 @@ public class Muzzle {
         return muzzle;
     }
 
-    ImageView getWhizzbang() {
+    public ImageView getWhizzbang() {
         return whizzbang;
     }
 
-    double getDirection() {
+    public double getDirection() {
         return direction;
     }
 
-    Muzzle(ImageView muzzle, ImageView whizzbang, double direction) {
+    public Muzzle(ImageView muzzle, ImageView whizzbang, double direction) {
         whizzbang.setVisible(false);
         this.muzzle = muzzle;
         this.whizzbang = whizzbang;
@@ -41,19 +41,27 @@ public class Muzzle {
         this.hp = 100;
     }
 
-    void transform(Rotate rotate) {
+    public Muzzle(double direction) {
+        this.direction = direction;
+        this.hp = 100;
+    }
+
+    public void subtractHp(int hp){
+        this.hp -= hp;
+    }
+    public void transform(Rotate rotate) {
         muzzle.getTransforms().setAll(rotate);
     }
 
-    double getLayoutX() {
+    public double getLayoutX() {
         return muzzle.getLayoutX();
     }
 
-    double getLayoutY() {
+    public double getLayoutY() {
         return muzzle.getLayoutY();
     }
 
-    double getFitHeight() {
+    public double getFitHeight() {
         return muzzle.getFitHeight();
     }
 }

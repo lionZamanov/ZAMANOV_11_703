@@ -1,10 +1,10 @@
 package ru.itis.game;
 
-class Engine {
+public class Engine {
     private static final double G = 50;
     private static final double SPEED = 0.7;
 
-    double[] getCoordinatesByVector(double speed, double windResist, double mass, double angle, double time){
+    public double[] getCoordinatesByVector(double speed, double windResist, double mass, double angle, double time){
         double m = mass;
         double k = windResist;
         double v0 = speed;

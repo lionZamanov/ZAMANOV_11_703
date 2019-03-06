@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?scenebuilder-stylesheet ../resources/styles.css?>
 
-<GridPane id="pane" fx:id="gridPane" prefHeight="502.0" prefWidth="1158.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itis.game.Controller">
+<GridPane id="pane" fx:id="gridPane" prefHeight="502.0" prefWidth="1158.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itis.socket.SocketClient">
 
     <ImageView fx:id="whizzbang1" fitHeight="40" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2">
         <Image url="@whizzbang.png" />
@@ -38,7 +38,6 @@
     </ImageView>
 
     <Label fx:id="windLabel">
-        wind
         <GridPane.margin>
             <Insets left="450.0" bottom="250"/>
         </GridPane.margin>
@@ -51,7 +50,6 @@
     </Label>
 
     <Label fx:id="hpLabel2" GridPane.columnIndex="1">
-        2
         <GridPane.margin>
             <Insets left="650.0" bottom="250" />
         </GridPane.margin>
