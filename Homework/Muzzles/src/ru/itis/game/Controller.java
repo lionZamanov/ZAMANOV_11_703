@@ -45,8 +45,8 @@ public class Controller {
 
     @FXML
     public void initialize() {
-        muzzle1 = new Muzzle(muzzleImg1, whizzbang1, 1);
-        muzzle2 = new Muzzle(muzzleImg2, whizzbang2, -1);
+        muzzle1 = new Muzzle(muzzleImg1, whizzbang1, 1, hpLabel1);
+        muzzle2 = new Muzzle(muzzleImg2, whizzbang2, -1, hpLabel2);
         currentMuzzle = muzzle2;
         enemyMuzzle = muzzle1;
         changeTurn();

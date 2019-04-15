@@ -49,6 +49,13 @@
         </GridPane.margin>
     </Label>
 
+    <Label fx:id="endGame">
+        <GridPane.margin>
+            <Insets bottom="250"/>
+            <Insets left="450"/>
+        </GridPane.margin>
+    </Label>
+
     <Label fx:id="hpLabel2" GridPane.columnIndex="1">
         <GridPane.margin>
             <Insets left="650.0" bottom="250" />

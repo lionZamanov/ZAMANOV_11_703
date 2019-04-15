@@ -1,15 +1,12 @@
 package ru.itis.socket;
 
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.transform.Rotate;
-import javafx.util.Duration;
-import ru.itis.game.Engine;
 import ru.itis.game.Muzzle;
 
 import java.io.BufferedReader;
@@ -23,13 +20,16 @@ public class SocketClient {
     private Socket clientSocket;
     private PrintWriter out;
     private BufferedReader in;
-    private int id;
+    private int myId;
 
     @FXML
     private Label windLabel;
 
     @FXML
     private Label hpLabel1;
+
+    @FXML
+    private Label endGame;
 
     @FXML
     private Label hpLabel2;
@@ -57,11 +57,12 @@ public class SocketClient {
 
     @FXML
     public void initialize() {
-        muzzle1 = new Muzzle(muzzleImg1, whizzbang1, 1);
-        muzzle2 = new Muzzle(muzzleImg2, whizzbang2, -1);
+        muzzle1 = new Muzzle(muzzleImg1, whizzbang1, 1, hpLabel1);
+        muzzle2 = new Muzzle(muzzleImg2, whizzbang2, -1, hpLabel2);
         gridPane.setOnMouseMoved(this::rotate);
         startConnection("127.0.0.1", 6666);
         gridPane.setOnMouseClicked(this::shoot);
+        locked = true;
         //gridPane.setOnMouseClicked(this::shoot);
     }
 
@@ -70,15 +71,15 @@ public class SocketClient {
             currentMuzzle.getWhizzbang().setVisible(true);
             double x0 = currentMuzzle.getWhizzbang().getLayoutX() - event.getX();
             double y0 = currentMuzzle.getWhizzbang().getLayoutY() - event.getY();
-            out.println(id + " shootParams " + Math.sqrt(x0 * x0 + y0 * y0) + " " + getAngle(event.getX(), event.getY(), currentMuzzle.getDirection()));
+            out.println("id " + myId + " shootParams " + Math.sqrt(x0 * x0 + y0 * y0) + " " + getAngle(event.getX(), event.getY(), currentMuzzle.getDirection()));
+            locked = true;
         }
     }
 
-    public void rotate(MouseEvent event) {
-        //out.println(id + " rotate " + event.getX() + " " + event.getY());
+    private void rotate(MouseEvent event) {
+        out.println("id " + myId + " rotate " + event.getX() + " " + event.getY());
         muzzleRotate(event.getX(), event.getY(), currentMuzzle);
     }
-
 
     private void muzzleRotate(double x, double y, Muzzle muzzle) {
         muzzle.transform(new Rotate(-getAngle(x, y, muzzle.getDirection()), 0, 30));
@@ -102,47 +103,69 @@ public class SocketClient {
                 try {
                     String response = in.readLine();
                     if (response != null) {
+                        // id -1 setId 0
+                        // id -1 windResist 0.54
                         // id 0 rotate 25 12
                         // id 1 shootParams 124 513
                         // id 0 whizzbangCoordinates 52 12
-                        // setId 0
-                        // windResist 0.54
                         // id 0 invisible
                         // id 1 hp 80
+                        // id 0 turn
                         String responseArray[] = response.split(" ");
-                        if (responseArray[0].equals("setId")) {
-                            id = Integer.valueOf(responseArray[1]);
-                            if (responseArray[1].equals("0")) {
-                                currentMuzzle = muzzle1;
-                                enemyMuzzle = muzzle2;
-                            } else {
-                                currentMuzzle = muzzle2;
-                                enemyMuzzle = muzzle1;
-                            }
-                        } else if (responseArray[0].equals("windResist")) {
-                            windLabel.setText("Сопротивление ветра: " + responseArray[1]);
-                        } else if (responseArray[2].equals("hp")) {
-                            if(responseArray[1].equals("0")){
-                                hpLabel1.setText("Player1: " + responseArray[3]);
-                            }else{
-                                hpLabel2.setText("Player2: " + responseArray[3]);
-                            }
-                        } else if (responseArray[2].equals("isVisible")) {
-                            if(responseArray[1].equals("0")){
-                                currentMuzzle.getWhizzbang().setVisible(false);
-                            }else{
-                                enemyMuzzle.getWhizzbang().setVisible(false);
-                            }
-                        } else if (responseArray[2].equals("rotate")) {
-                            muzzleRotate(Double.parseDouble(responseArray[3]), Double.parseDouble(responseArray[4]), enemyMuzzle);
-                        } else if (responseArray[2].equals("whizzbangCoordinates")) {
-                            if (responseArray[1].equals(String.valueOf(id))) {
-                                currentMuzzle.getWhizzbang().setTranslateX(Integer.parseInt(responseArray[3]));
-                                currentMuzzle.getWhizzbang().setTranslateY(Integer.parseInt(responseArray[4]));
-                            } else {
-                                enemyMuzzle.getWhizzbang().setTranslateX(Integer.parseInt(responseArray[3]));
-                                enemyMuzzle.getWhizzbang().setTranslateY(Integer.parseInt(responseArray[4]));
-                            }
+                        switch (responseArray[2]) {
+                            case "hp":
+                                Platform.runLater(() -> {
+                                    if (responseArray[1].equals(String.valueOf(myId))) {
+                                        currentMuzzle.getHpLabel().setText("Player1: " + responseArray[3]);
+                                    } else {
+                                        enemyMuzzle.getHpLabel().setText("Player2: " + responseArray[3]);
+                                    }
+                                });
+                                break;
+                            case "invisible":
+                                if (responseArray[1].equals(String.valueOf(myId))) {
+                                    currentMuzzle.getWhizzbang().setVisible(false);
+                                } else {
+                                    enemyMuzzle.getWhizzbang().setVisible(false);
+                                }
+                                break;
+                            case "rotate":
+                                muzzleRotate(Double.parseDouble(responseArray[3]), Double.parseDouble(responseArray[4]), enemyMuzzle);
+                                break;
+                            case "whizzbangCoordinates":
+                                if (responseArray[1].equals(String.valueOf(myId))) {
+                                    currentMuzzle.getWhizzbang().setTranslateX(Double.parseDouble(responseArray[3]));
+                                    currentMuzzle.getWhizzbang().setTranslateY(Double.parseDouble(responseArray[4]));
+                                } else {
+                                    enemyMuzzle.getWhizzbang().setTranslateX(Double.parseDouble(responseArray[3]));
+                                    enemyMuzzle.getWhizzbang().setTranslateY(Double.parseDouble(responseArray[4]));
+                                }
+                                break;
+                            case "turn":
+                                if (responseArray[1].equals(String.valueOf(myId))) {
+                                    locked = false;
+                                }
+                                break;
+                            case "setId":
+                                myId = Integer.valueOf(responseArray[3]);
+                                if (myId == 0) {
+                                    currentMuzzle = muzzle1;
+                                    enemyMuzzle = muzzle2;
+                                } else {
+                                    currentMuzzle = muzzle2;
+                                    enemyMuzzle = muzzle1;
+                                }
+                                break;
+                            case "windResist":
+                                Platform.runLater(() -> {
+                                    windLabel.setText("Сопротивление ветра: " + responseArray[3]);
+                                });
+                                break;
+                            case "endGame":
+                                Platform.runLater(() -> {
+                                    endGame.setText("Конец игры\nпобедил игрок № " + (Integer.valueOf(responseArray[3]) + 1));
+                                    endGame.setText(endGame.getText() + "\n" + (Integer.valueOf(responseArray[3]) == myId ? "Поздравляю!" : "Повезет в след.раз"));
+                                });
                         }
                         System.out.println(response);
                     }

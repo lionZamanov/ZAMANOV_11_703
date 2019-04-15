@@ -7,14 +7,16 @@ import javafx.util.Duration;
 import ru.itis.game.Engine;
 import ru.itis.game.Muzzle;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class MultiServer {
@@ -24,11 +26,12 @@ public class MultiServer {
     private ClientHandler currentTurnClient;
     private ClientHandler enemyClient;
     private double windResist;
+    private boolean locked;
 
     public MultiServer() {
         // Список для работы с многопоточностью
-        id = 0;
         currentTurnClient = null;
+        locked = true;
         clients = new CopyOnWriteArrayList<>();
     }
 
@@ -43,8 +46,7 @@ public class MultiServer {
         while (true) {
             try {
                 // запускаем обработчик сообщений для каждого подключаемого клиента
-                ClientHandler clientHandler = new ClientHandler(serverSocket.accept());
-                clientHandler.setClientId(id);
+                ClientHandler clientHandler = new ClientHandler(serverSocket.accept(), id);
                 clientHandler.start();
                 id++;
             } catch (IOException e) {
@@ -68,26 +70,21 @@ public class MultiServer {
             return muzzle;
         }
 
-        public void setClientId(int id) {
-            this.clientId = id;
-        }
-
-        ClientHandler(Socket socket) {
+        ClientHandler(Socket socket, int clientId) {
+            this.clientId = clientId;
             this.clientSocket = socket;
-            // добавляем текущее подключение в список
             clients.add(this);
-            PrintWriter out = null;
             try {
-                out = new PrintWriter(socket.getOutputStream(), true);
-                out.println("setId " + clientId);
-                out.println("id " + clientId + " hp " + 100);
+                PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+                out.println("id -1 setId " + clientId);
                 if (clientId == 0) {
                     muzzle = new Muzzle(1);
                     currentTurnClient = this;
                 } else {
                     muzzle = new Muzzle(-1);
                     enemyClient = this;
-                    out.println("id " + 0 + " turn");
+                    locked = false;
+                    notifyUsersConfig();
                 }
             } catch (IOException e) {
                 e.printStackTrace();
@@ -104,58 +101,22 @@ public class MultiServer {
                 String inputLine;
                 while ((inputLine = in.readLine()) != null) {
                     if (".".equals(inputLine)) {
-                        // бегаем по всем клиентам и обовещаем их о событии
                         for (ClientHandler client : clients) {
                             PrintWriter out = new PrintWriter(client.clientSocket.getOutputStream(), true);
                             out.println("bye");
                         }
                         break;
                     } else {
+                        System.out.println(inputLine);
                         String response[] = inputLine.split(" ");
-                        for (ClientHandler client : clients) {
-                            PrintWriter out = new PrintWriter(client.clientSocket.getOutputStream(), true);
-                            if (response[1].equals("rotate")) {
-                                String clientId = Long.toString(client.getClientId());
-                                if (!response[0].equals(clientId)) {
-                                    out.println(String.join(" ", response));
-                                }
-                            } else if (response[1].equals("shootParams")) {
-                                double speed = Double.valueOf(response[2]);
-                                double angle = Double.valueOf(response[3]);
-                                final double[] t = {0};
-                                Engine engine = new Engine();
-                                Timeline timeline = new Timeline();
-                                timeline.setCycleCount(Timeline.INDEFINITE);
-                                timeline.getKeyFrames().add(new KeyFrame(
-                                        new Duration(10),
-                                        s -> {
-                                            t[0] += 0.07;
-                                            double[] coordinates = engine.getCoordinatesByVector(speed, windResist, 1, angle, t[0]);
-                                            if (Math.abs(coordinates[0] - 1350 * currentTurnClient.getMuzzle().getDirection()) + Math.abs(coordinates[1]) < 100) {
-                                                enemyClient.getMuzzle().subtractHp(20);
-                                                t[0] = 0;
-                                                timeline.stop();
-                                                changeTurn();
-                                            } else if (coordinates[1] > 100) {
-                                                t[0] = 0;
-                                                timeline.stop();
-                                                changeTurn();
-                                            } else if (t[0] > 15) {
-                                                t[0] = 0;
-                                                timeline.stop();
-                                                changeTurn();
-                                            } else {
-                                                out.println("id " + currentTurnClient.getClientId() + " whizzbangCoordinates " + coordinates[0] + " " + coordinates[1]);
-                                                //currentTurnClient.getMuzzle().getWhizzbang().getTransforms().add(new Rotate(3 * currentMuzzle.getDirection(), 20, 20));
-                                            }
-
-                                        }
-                                ));
-                                timeline.play();
+                        if (response[2].equals("rotate")) {
+                            notifyUsersAboutRotating(response);
+                        } else if (response[2].equals("shootParams")) {
+                            if(!locked) {
+                                notifyUsersAboutShoot(response);
                             }
                         }
                     }
-
                 }
                 in.close();
                 clientSocket.close();
@@ -165,24 +126,103 @@ public class MultiServer {
             }
         }
 
-        private void changeTurn() {
+        private void notifyUsersAboutRotating(String[] response) {
             for (ClientHandler client : clients) {
                 PrintWriter out = null;
-                windResist = Math.random();
                 try {
                     out = new PrintWriter(client.clientSocket.getOutputStream(), true);
-                    out.println("id " + currentTurnClient.getClientId() + " whizzbangCoordinates " + 0 + " " + 0);
-                    out.println("id " + currentTurnClient.getClientId() + " invisible " + 0);
-                    out.println("id " + currentTurnClient.getClientId() + " hp " + currentTurnClient.getMuzzle().getHp());
-                    out.println("id " + enemyClient.getClientId() + " hp " + currentTurnClient.getMuzzle().getHp());
-                    out.println("id " + enemyClient.getClientId() + " turn");
-                    out.println("windResist " + String.format("%.2f", windResist));
+                    String clientId = Integer.toString(client.getClientId());
+                    if (!response[1].equals(clientId)) {
+                        out.println(String.join(" ", response));
+                    }
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                ClientHandler change = currentTurnClient;
-                currentTurnClient = enemyClient;
-                enemyClient = change;
+            }
+        }
+
+        private void notifyUsersAboutShoot(String[] response) {
+            Timer timer = new Timer();
+            double speed = Double.valueOf(response[3]);
+            double angle = Double.valueOf(response[4]);
+            final double[] t = {0};
+            timer.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    Engine engine = new Engine();
+                    t[0] += 0.07;
+                    double[] coordinates = engine.getCoordinatesByVector(speed, windResist, 1, angle, t[0]);
+                    if (coordinates[1] > 100 || t[0] > 15 || isHit(coordinates[0], coordinates[1])) {
+                        if(isHit(coordinates[0], coordinates[1])) {
+                            enemyClient.getMuzzle().subtractHp(20);
+                            if(enemyClient.getMuzzle().isDead()){
+                                gameOver();
+                            }else{
+                                t[0] = 0;
+                                this.cancel();
+                                changeTurn();
+                            }
+                        }else {
+                            t[0] = 0;
+                            this.cancel();
+                            changeTurn();
+                        }
+                    } else {
+                        for (ClientHandler client : clients) {
+                            PrintWriter out = null;
+                            try {
+                                out = new PrintWriter(client.clientSocket.getOutputStream(), true);
+                                out.println("id " + currentTurnClient.getClientId() + " whizzbangCoordinates " + coordinates[0] + " " + coordinates[1]);
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                }
+            }, 10, 10);
+        }
+        private boolean isHit(double x, double y){
+            return Math.abs(x - 1350 * currentTurnClient.getMuzzle().getDirection()) + Math.abs(y) < 100;
+        }
+
+        private void gameOver(){
+            locked = true;
+            notifyUsersAboutEndTheGame();
+        }
+
+        private void notifyUsersAboutEndTheGame(){
+            for (ClientHandler client : clients) {
+                PrintWriter out = null;
+                try {
+                    out = new PrintWriter(client.clientSocket.getOutputStream(), true);
+                    out.println("id -1 endGame " + currentTurnClient.getClientId());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        private void changeTurn() {
+            ClientHandler change = currentTurnClient;
+            currentTurnClient = enemyClient;
+            enemyClient = change;
+            notifyUsersConfig();
+        }
+
+        private void notifyUsersConfig() {
+            windResist = Math.random();
+            for (ClientHandler client : clients) {
+                PrintWriter out = null;
+                try {
+                    out = new PrintWriter(client.clientSocket.getOutputStream(), true);
+                    out.println("id " + enemyClient.getClientId() + " whizzbangCoordinates " + 0 + " " + 0);
+                    out.println("id " + enemyClient.getClientId() + " invisible " + 0);
+                    out.println("id " + currentTurnClient.getClientId() + " hp " + currentTurnClient.getMuzzle().getHp());
+                    out.println("id " + enemyClient.getClientId() + " hp " + enemyClient.getMuzzle().getHp());
+                    out.println("id " + currentTurnClient.getClientId() + " turn");
+                    out.println("id -1 windResist " + String.format("%.2f", windResist));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }

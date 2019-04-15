@@ -3,21 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/ProgramClientStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/ProgramClientStart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/ProgramMultiServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/ProgramMultiServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/game/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/game/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/game/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/game/Engine.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/game/Muzzle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/game/Muzzle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/socket/ChatMultiServer$ClientHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/socket/ChatMultiServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/socket/MultiServer$ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/socket/MultiServer$ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/socket/MultiServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/socket/MultiServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/socket/SocketClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/socket/SocketClient$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/socket/SocketClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Muzzles/ru/itis/socket/SocketClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Muzzles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Muzzles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Muzzles/test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Muzzles/test.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/test.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/itis/ProgramClientStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/itis/ProgramClientStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/itis/ProgramMultiServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/itis/ProgramMultiServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/itis/game/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/itis/game/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/itis/game/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/itis/game/Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/itis/game/Muzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/itis/game/Muzzle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/itis/socket/SocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/itis/socket/SocketClient.java" afterDir="false" />
@@ -76,32 +72,35 @@
     <session id="1556603517">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="CSS" value="1" />
+          <entry key="CSS" value="2" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="59" />
-          <entry key="XML" value="11" />
+          <entry key="JAVA" value="69" />
+          <entry key="XML" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="25" />
-          <entry key="JAVA" value="6822" />
-          <entry key="XML" value="213" />
+          <entry key="CSS" value="43" />
+          <entry key="JAVA" value="8465" />
+          <entry key="XML" value="256" />
         </counts>
       </usages-collector>
     </session>
@@ -111,11 +110,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/itis/ProgramClientStart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            <state relative-caret-position="323">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#459#460#0" expanded="true" />
@@ -129,7 +128,7 @@
         <entry file="file://$PROJECT_DIR$/src/ru/itis/ProgramMultiServer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -137,50 +136,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/itis/socket/SocketClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="2210">
+              <caret line="165" column="65" selection-start-line="165" selection-start-column="65" selection-end-line="165" selection-end-column="65" />
               <folding>
+                <element signature="method#shoot#0;class#SocketClient#0" />
+                <element signature="method#rotate#0;class#SocketClient#0" />
+                <element signature="method#muzzleRotate#0;class#SocketClient#0" />
                 <element signature="method#getAngle#0;class#SocketClient#0" />
                 <element signature="method#stopConnection#0;class#SocketClient#0" />
+                <element signature="method#startConnection#0;class#SocketClient#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/test.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="128" selection-start-line="128" selection-end-line="128" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#start#0;class#MultiServer#0" />
-                <element signature="e#1479#1480#0" expanded="true" />
-                <element signature="e#1511#1512#0" expanded="true" />
-                <element signature="e#1899#1900#0" expanded="true" />
-                <element signature="e#1936#1937#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/itis/game/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="68" column="39" lean-forward="true" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+            <state relative-caret-position="2992">
+              <caret line="197" column="68" selection-start-line="197" selection-start-column="68" selection-end-line="197" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/itis/game/Engine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -188,12 +184,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/itis/game/Muzzle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+            <state relative-caret-position="374">
+              <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#973#974#0" expanded="true" />
-                <element signature="e#1002#1003#0" expanded="true" />
+                <element signature="e#679#680#0" expanded="true" />
+                <element signature="e#709#710#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -216,7 +212,15 @@
       <find>transform</find>
       <find>start</find>
       <find>System</find>
+      <find>keyframe</find>
+      <find>windres</find>
       <find>Integer</find>
+      <find>Timer</find>
+      <find>turn</find>
+      <find>tur</find>
+      <find>windr</find>
+      <find>whizzbangCoordinates 0 0</find>
+      <find>Math</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -235,7 +239,6 @@
         <option value="$PROJECT_DIR$/src/ru/itis/test.fxml" />
         <option value="$PROJECT_DIR$/src/ru/itis/Engine.java" />
         <option value="$PROJECT_DIR$/src/ru/itis/Muzzle.java" />
-        <option value="$PROJECT_DIR$/resources/styles.css" />
         <option value="$PROJECT_DIR$/src/ru/itis/Controller.java" />
         <option value="$PROJECT_DIR$/src/ru/itis/SocketClient.java" />
         <option value="$PROJECT_DIR$/src/ru/itis/ChatMultiServer.java" />
@@ -246,10 +249,12 @@
         <option value="$PROJECT_DIR$/src/ru/itis/ProgramClientStart.java" />
         <option value="$PROJECT_DIR$/src/ru/itis/ProgramMultiServer.java" />
         <option value="$PROJECT_DIR$/src/ru/itis/game/Engine.java" />
+        <option value="$PROJECT_DIR$/out/production/Muzzles/test.fxml" />
         <option value="$PROJECT_DIR$/src/ru/itis/game/Controller.java" />
-        <option value="$PROJECT_DIR$/src/ru/itis/game/Muzzle.java" />
-        <option value="$PROJECT_DIR$/src/ru/itis/socket/SocketClient.java" />
+        <option value="$PROJECT_DIR$/resources/styles.css" />
         <option value="$PROJECT_DIR$/resources/test.fxml" />
+        <option value="$PROJECT_DIR$/src/ru/itis/socket/SocketClient.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/game/Muzzle.java" />
         <option value="$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java" />
       </list>
     </option>
@@ -261,9 +266,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="990" />
-    <option name="width" value="940" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1005" />
+    <option name="width" value="920" />
     <option name="height" value="1090" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -277,57 +282,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Muzzles" type="b2602c69:ProjectViewProjectNode" />
               <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Muzzles" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Muzzles" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Muzzles" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Muzzles" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
-              <item name="ru" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Muzzles" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
-              <item name="ru" type="462c0819:PsiDirectoryNode" />
-              <item name="itis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Muzzles" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="Muzzles" type="462c0819:PsiDirectoryNode" />
-              <item name="ru" type="462c0819:PsiDirectoryNode" />
-              <item name="itis" type="462c0819:PsiDirectoryNode" />
-              <item name="socket" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Muzzles" type="b2602c69:ProjectViewProjectNode" />
@@ -364,7 +325,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -378,9 +338,9 @@
     <property name="SearchEverywhereHistoryKey" value="Integer&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551905393616" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552393408939" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="E:/11-703/Themes/26. JavaSocket" />
+    <property name="last_opened_file_path" value="E:/11-703/Themes/29. Hibernate Example" />
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
@@ -569,18 +529,22 @@
       <workItem from="1551719624719" duration="6187000" />
       <workItem from="1551736115622" duration="2159000" />
       <workItem from="1551885931117" duration="1062000" />
-      <workItem from="1551887693603" duration="14448000" />
+      <workItem from="1551887693603" duration="15302000" />
+      <workItem from="1552129433041" duration="10098000" />
+      <workItem from="1552224046949" duration="3315000" />
+      <workItem from="1552241151425" duration="3922000" />
+      <workItem from="1552392575073" duration="578000" />
+      <workItem from="1553959137103" duration="340000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69735000" />
+    <option name="totallyTimeSpent" value="88842000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="-7" width="1487" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16047652" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.17156863" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -630,135 +594,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ru/itis/socket/SocketClient.java</url>
-          <line>21</line>
+          <line>18</line>
           <properties />
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/SocketClient.java</url>
-          <line>111</line>
-          <properties />
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/game/Engine.java</url>
-          <line>7</line>
-          <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/SocketClient.java</url>
-          <line>68</line>
-          <properties />
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>168</line>
-          <properties />
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>169</line>
-          <properties />
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>170</line>
-          <properties />
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>171</line>
-          <properties />
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>172</line>
-          <properties />
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>173</line>
-          <properties />
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>174</line>
-          <properties />
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>175</line>
-          <properties />
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>176</line>
-          <properties />
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>177</line>
-          <properties />
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>179</line>
-          <properties />
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>178</line>
-          <properties />
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>182</line>
-          <properties />
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>183</line>
-          <properties />
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java</url>
-          <line>184</line>
-          <properties />
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/game/Controller.java</url>
-          <line>78</line>
-          <properties />
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/game/Controller.java</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/itis/game/Controller.java</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -793,13 +631,6 @@
     <entry file="file://$PROJECT_DIR$/resources/whizzbang.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/javafx/animation/KeyFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="223" column="11" selection-start-line="223" selection-start-column="11" selection-end-line="223" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/swing/text/html/ImageView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1145">
@@ -811,13 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="771">
           <caret line="763" column="20" selection-start-line="763" selection-start-column="11" selection-end-line="763" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -845,10 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
           <caret line="1703" column="16" selection-start-line="1703" selection-start-column="16" selection-end-line="1703" selection-end-column="16" />
-          <folding>
-            <element signature="e#66012#66013#0" expanded="true" />
-            <element signature="e#66038#66039#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -868,91 +688,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/Muzzles/ru/itis/socket/MultiServer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1887">
-          <folding>
-            <element signature="e#0#8241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/itis/game/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1887" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/Muzzles/sample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/test.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="210" selection-start-line="11" selection-start-column="204" selection-end-line="11" selection-end-column="210" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/itis/game/Muzzle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#973#974#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/itis/game/Engine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/itis/ProgramMultiServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/itis/ProgramClientStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/itis/game/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="68" column="39" lean-forward="true" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/javafx/util/Duration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="187" selection-start-line="187" selection-end-line="187" />
-          <folding>
-            <element signature="e#5319#5320#0" expanded="true" />
-            <element signature="e#5355#5356#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -967,21 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1477">
           <caret line="84" column="40" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
-          <folding>
-            <element signature="e#2984#2985#0" expanded="true" />
-            <element signature="e#3016#3017#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/itis/socket/SocketClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="method#getAngle#0;class#SocketClient#0" />
-            <element signature="method#stopConnection#0;class#SocketClient#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -992,17 +723,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java">
+    <entry file="file://$PROJECT_DIR$/out/production/Muzzles/test.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        <state relative-caret-position="510">
+          <caret line="51" column="53" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/javafx/animation/KeyFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3552">
+          <caret line="55" column="27" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/TimerTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-646">
+          <caret line="85" column="14" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/game/Engine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/game/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="67" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/game/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="48" column="65" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#start#0;class#MultiServer#0" />
-            <element signature="e#1479#1480#0" expanded="true" />
-            <element signature="e#1511#1512#0" expanded="true" />
-            <element signature="e#1899#1900#0" expanded="true" />
-            <element signature="e#1936#1937#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/ProgramClientStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/ProgramMultiServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/socket/SocketClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="165" column="65" selection-start-line="165" selection-start-column="65" selection-end-line="165" selection-end-column="65" />
+          <folding>
+            <element signature="method#shoot#0;class#SocketClient#0" />
+            <element signature="method#rotate#0;class#SocketClient#0" />
+            <element signature="method#muzzleRotate#0;class#SocketClient#0" />
+            <element signature="method#getAngle#0;class#SocketClient#0" />
+            <element signature="method#stopConnection#0;class#SocketClient#0" />
+            <element signature="method#startConnection#0;class#SocketClient#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/test.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/socket/MultiServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="197" column="68" selection-start-line="197" selection-start-column="68" selection-end-line="197" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/game/Muzzle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
           </folding>
         </state>
       </provider>
